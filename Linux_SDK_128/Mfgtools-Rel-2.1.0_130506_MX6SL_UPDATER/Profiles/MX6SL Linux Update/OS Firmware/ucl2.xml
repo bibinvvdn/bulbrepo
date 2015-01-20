@@ -1,0 +1,249 @@
+<!--
+* Copyright (C) 2010, Freescale Semiconductor, Inc. All Rights Reserved.
+* The CFG element contains a list of recognized usb devices.
+*  DEV elements provide a name, class, vid and pid for each device.
+*
+* Each LIST element contains a list of update instructions.
+*  "Install" - Erase media and install firmware.
+*  "Update" - Update firmware only.
+*
+* Each CMD element contains one update instruction of attribute type.
+*  "pull" - Does UtpRead(body, file) transaction.
+*  "push" - Does UtpWrite(body, file) transaction.
+*  "drop" - Does UtpCommand(body) then waits for device to disconnect.
+*  "boot" - Finds configured device, forces it to "body" device and downloads "file".
+*  "find" - Waits for "timeout" seconds for the "body" device to connect.
+*  "show" - Parse and show device info in "file".  
+-->
+
+
+<UCL>
+  <CFG>
+    <STATE name="BootStrap" dev="MX6SL" vid="15A2" pid="0063"/>
+	  <STATE name="Updater"   dev="MSC" vid="066F" pid="37FF"/>
+  </CFG>
+
+  <LIST name="ARM2-SD" desc="Choose SD as media">
+    <CMD state="BootStrap" type="boot" body="Recovery" file ="u-boot-mx6sl-arm2.bin" >Loading U-boot</CMD>
+    <CMD state="BootStrap" type="load" file="uImage" address="0x80800000"
+        loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Loading Kernel.</CMD>
+    <CMD state="BootStrap" type="load" file="initramfs.cpio.gz.uboot" address="0x80C00000"
+        loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Loading Initramfs.</CMD>
+    <CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+    <!--
+    * The mx50 supports OTP operation through /sys
+    * Read: cat /sys/fsl_otp/HW_OCOTP_MAC0
+    * Write: echo 0x10234567 > /sys/fsl_otp/HW_OCOTP_MAC0
+    * If the user wants to burn OTP at mfg-tool, please take below
+    * as an example
+    * 
+    * <CMD type="push" body="$ echo 0x10234567 > /sys/fsl_otp/HW_OCOTP_MAC0">Burn ethernet MAC0 at OTP</CMD>
+    -->
+    <CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk0 bs=512 seek=1536 count=16">clean up u-boot parameter</CMD>
+    <CMD state="Updater" type="push" body="send" file="mksdcard.sh.tar">Sending partition shell</CMD>
+    <CMD state="Updater" type="push" body="$ tar xf $FILE "> Partitioning...</CMD>
+    <CMD state="Updater" type="push" body="$ sh mksdcard.sh /dev/mmcblk0"> Partitioning...</CMD>
+    <CMD state="Updater" type="push" body="send" file="files/u-boot-mx6sl-arm2.bin">Sending u-boot.bin</CMD>
+    <CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk0 bs=1k seek=1 skip=1 conv=fsync">write u-boot.bin to sd card</CMD>
+    <CMD state="Updater" type="push" body="send" file="files/uImage">Sending kernel uImage</CMD>
+    <CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk0 bs=1M seek=1 conv=fsync">write kernel image to sd card</CMD>
+    <CMD state="Updater" type="push" body="$ mkfs.ext3 -j /dev/mmcblk0p1">Formatting rootfs partition</CMD>
+    <CMD state="Updater" type="push" body="$ mkdir -p /mnt/mmcblk0p1"/> 
+    <CMD state="Updater" type="push" body="$ mount -t ext3 /dev/mmcblk0p1 /mnt/mmcblk0p1"/>
+    <CMD state="Updater" type="push" body="pipe tar -jxv -C /mnt/mmcblk0p1" file="files/rootfs.tar.bz2">Sending and writting rootfs</CMD>
+    <CMD state="Updater" type="push" body="frf">Finishing rootfs write</CMD>
+    <CMD state="Updater" type="push" body="$ umount /mnt/mmcblk0p1">Unmounting rootfs partition</CMD>
+    <CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
+ <!--
+    The below commands will trigger reboot
+    <CMD type="push" body="!3">Done</CMD>
+ -->
+ </LIST>
+
+ 
+<LIST name="EVK-SPI_NOR" desc="Choose SPI-NOR as media">
+	  <!--
+	    boot dip settings for SPI-NOR boot:
+	    SW26: dip 1, 4, 5, 6 are on. Others are off
+	    SW28: dip 5 is on. Others are off
+	  -->
+	<CMD state="BootStrap" type="boot" body="BootStrap" file ="u-boot-mx6sl-evk.bin" >Loading uboot.</CMD>
+	<CMD state="BootStrap" type="load" file="uImage" address="0x80800000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Doing Kernel.</CMD>
+	<CMD state="BootStrap" type="load" file="initramfs.cpio.gz.uboot" address="0x80C00000"
+		loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Doing Initramfs.</CMD>
+	<CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+	<!--
+	  Please use "cat /proc/mtd" to check the right partitions for NAND
+	  ,mtd0 and mtd1 are for SPI-NOR; mtd2 - mtd6 are for NAND
+	-->
+	<CMD state="Updater" type="push" body="$ flash_erase /dev/mtd0 0 0">Erasing Boot partition</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/u-boot.bin">Sending U-Boot</CMD>
+	<CMD state="Updater" type="push" body="$ flashcp $FILE /dev/mtd0">write U-Boot to SPI-NOR</CMD>
+
+	
+	<CMD state="Updater" type="push" body="$ flash_erase /dev/mtd1 0 0 ">Erasing Kernel partition</CMD>
+	
+
+	<CMD state="Updater" type="push" body="send" file="files/uImage">Sending Kernel Image</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mtd1 bs=512">Flashing Kernel</CMD>
+	<CMD state="Updater" type="push" body="send" file="files/rootfs.ext2.gz.uboot">Sending Ramdisk Image</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mtd1 bs=512 seek=8192">Flashing Ramdisk Image</CMD>
+		
+	<!--<CMD state="Updater" type="push" body="$ flash_erase /dev/mtd2 0 0 ">Erasing a blank partition</CMD>--> 
+	
+	<CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
+</LIST>
+
+ 
+ <LIST name="EVK-SD" desc="Choose SD as media">
+    <CMD state="BootStrap" type="boot" body="Recovery" file ="u-boot-mx6sl-evk.bin" >Loading U-boot</CMD>
+    <CMD state="BootStrap" type="load" file="uImage" address="0x80800000"
+        loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Loading Kernel.</CMD>
+    <CMD state="BootStrap" type="load" file="initramfs.cpio.gz.uboot" address="0x80C00000"
+        loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Loading Initramfs.</CMD>
+    <CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+    <!--
+    * The mx50 supports OTP operation through /sys
+    * Read: cat /sys/fsl_otp/HW_OCOTP_MAC0
+    * Write: echo 0x10234567 > /sys/fsl_otp/HW_OCOTP_MAC0
+    * If the user wants to burn OTP at mfg-tool, please take below
+    * as an example
+    * 
+    * <CMD type="push" body="$ echo 0x10234567 > /sys/fsl_otp/HW_OCOTP_MAC0">Burn ethernet MAC0 at OTP</CMD>
+    -->
+    <CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk0 bs=512 seek=1536 count=16">clean up u-boot parameter</CMD>
+    <CMD state="Updater" type="push" body="send" file="mksdcard.sh.tar">Sending partition shell</CMD>
+    <CMD state="Updater" type="push" body="$ tar xf $FILE "> Partitioning...</CMD>
+    <CMD state="Updater" type="push" body="$ sh mksdcard.sh /dev/mmcblk0"> Partitioning...</CMD>
+    <CMD state="Updater" type="push" body="send" file="files/u-boot-mx6sl-evk.bin">Sending u-boot.bin</CMD>
+    <CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk0 bs=1k seek=1 skip=1 conv=fsync">write u-boot.bin to sd card</CMD>
+    <CMD state="Updater" type="push" body="send" file="files/uImage">Sending kernel uImage</CMD>
+    <CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk0 bs=1M seek=1 conv=fsync">write kernel image to sd card</CMD>
+    <CMD state="Updater" type="push" body="$ mkfs.ext3 -j /dev/mmcblk0p1">Formatting rootfs partition</CMD>
+    <CMD state="Updater" type="push" body="$ mkdir -p /mnt/mmcblk0p1"/> 
+    <CMD state="Updater" type="push" body="$ mount -t ext3 /dev/mmcblk0p1 /mnt/mmcblk0p1"/>
+    <CMD state="Updater" type="push" body="pipe tar -jxv -C /mnt/mmcblk0p1" file="files/rootfs.tar.bz2">Sending and writting rootfs</CMD>
+    <CMD state="Updater" type="push" body="frf">Finishing rootfs write</CMD>
+    <CMD state="Updater" type="push" body="$ umount /mnt/mmcblk0p1">Unmounting rootfs partition</CMD>
+    <CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
+ <!--
+    The below commands will trigger reboot
+    <CMD type="push" body="!3">Done</CMD>
+ -->
+ </LIST>
+
+  <LIST name="ubuntu-EVK-SD" desc="Choose SD as media">
+    <CMD state="BootStrap" type="boot" body="Recovery" file ="u-boot-mx6sl-evk.bin" >Loading U-boot</CMD>
+    <CMD state="BootStrap" type="load" file="uImage" address="0x80800000"
+        loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Loading Kernel.</CMD>
+    <CMD state="BootStrap" type="load" file="initramfs.cpio.gz.uboot" address="0x80C00000"
+        loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Loading Initramfs.</CMD>
+    <CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+
+    <CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk0 bs=512 seek=1536 count=16">clean up u-boot parameter</CMD>
+    <CMD state="Updater" type="push" body="send" file="mksdcard.sh.tar">Sending partition shell</CMD>
+    <CMD state="Updater" type="push" body="$ tar xf $FILE "> Partitioning...</CMD>
+    <CMD state="Updater" type="push" body="$ sh mksdcard.sh /dev/mmcblk0"> Partitioning...</CMD>
+    <CMD state="Updater" type="push" body="send" file="files/u-boot-mx6sl-evk.bin">Sending u-boot.bin</CMD>
+    <CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk0 bs=1k seek=1 skip=1 conv=fsync">write u-boot.bin to sd card</CMD>
+    <CMD state="Updater" type="push" body="send" file="files/uImage">Sending kernel uImage</CMD>
+    <CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk0 bs=1M seek=1 conv=fsync">write kernel image to sd card</CMD>
+    <CMD state="Updater" type="push" body="$ mkfs.ext3 -j /dev/mmcblk0p1">Formatting rootfs partition</CMD>
+    <CMD state="Updater" type="push" body="$ mkdir -p /mnt/mmcblk0p1"/> 
+    <CMD state="Updater" type="push" body="$ mount -t ext3 /dev/mmcblk0p1 /mnt/mmcblk0p1"/>
+    <CMD state="Updater" type="push" body="pipe tar --numeric-owner -zxv -C /mnt/mmcblk0p1" file="files/oneiric.tgz">Sending and writting rootfs</CMD>
+    <CMD state="Updater" type="push" body="frf">Finishing rootfs write</CMD>
+    <CMD state="Updater" type="push" body="$ umount /mnt/mmcblk0p1">Unmounting rootfs partition</CMD>
+    <CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
+ <!--
+    The below commands will trigger reboot
+    <CMD type="push" body="!3">Done</CMD>
+ -->
+ </LIST>
+
+
+<LIST name="Android-ARM2-SD" desc="Choose SD android as media">
+  <!-- Android Profile: -->
+    <CMD state="BootStrap" type="find" body="Recovery" timeout="180"/>
+    <CMD state="BootStrap" type="boot" body="Recovery" file ="u-boot-mx6sl-arm2.bin" >Loading U-boot</CMD>
+    <CMD state="BootStrap" type="load" file="uImage" address="0x80800000"
+        loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Loading Kernel.</CMD>
+    <CMD state="BootStrap" type="load" file="initramfs.cpio.gz.uboot" address="0x80C00000"
+        loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Loading Initramfs.</CMD>
+    <CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+  
+  <CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk0 bs=512 seek=1536 count=16">clean up u-boot parameter</CMD>
+	<CMD state="Updater" type="push" body="send" file="files/android/u-boot.bin">Sending U-Boot</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk0 bs=512 seek=2 skip=2">write U-Boot to sd card</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="mksdcard-android.sh.tar">Sending partition shell</CMD>
+	<CMD state="Updater" type="push" body="$ tar xf $FILE "> Partitioning...</CMD>
+	<CMD state="Updater" type="push" body="$ sh mksdcard-android.sh /dev/mmcblk0"> Partitioning...</CMD>
+
+	<CMD state="Updater" type="push" body="$ ls -l /dev/mmc* ">Formatting sd partition</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/android/boot.img">Sending kernel uImage</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk0p1">write boot.img</CMD>
+	<CMD state="Updater" type="push" body="frf">flush the memory.</CMD>
+	<CMD state="Updater" type="push" body="$ newfs_msdos -F 32 -O android -c 8 /dev/mmcblk0p4">Formatting sd partition</CMD>
+	<CMD state="Updater" type="push" body="$ mkfs.ext4 /dev/mmcblk0p5">Formatting system partition</CMD>
+	<CMD state="Updater" type="push" body="$ mkfs.ext4 /dev/mmcblk0p6">Formatting cache partition</CMD>
+	<CMD state="Updater" type="push" body="$ mkfs.ext4 /dev/mmcblk0p7">Formatting data partition</CMD>
+	<CMD state="Updater" type="push" body="frf">flush the memory.</CMD>
+	<CMD state="Updater" type="push" body="$ mkfs.ext4 /dev/mmcblk0p8">Formatting misc partition</CMD>
+	<CMD state="Updater" type="push" body="pipe dd of=/dev/mmcblk0p5 bs=512" file="files/android/system.img">Sending and writting system.img</CMD>
+	<CMD state="Updater" type="push" body="frf">flush the memory.</CMD>
+	<!-- Write userdata.img is optional, for some customer this is needed, but it's optional. -->
+	<!-- Also, userdata.img will have android unit test, you can use this to do some auto test. -->
+	<!-- <CMD state="Updater" type="push" onError="ignore" body="pipe dd of=/dev/mmcblk0p7" file="file/android/userdate.img"> Sending userdata.img(optional) </CMD>-->
+	<CMD state="Updater" type="push" body="frf">flush the memory.</CMD>
+	<CMD state="Updater" type="push" body="pipe dd of=/dev/mmcblk0p2 bs=512" file="files/android/recovery.img">Sending and writting recovery.img</CMD>
+
+	<CMD state="Updater" type="push" body="frf">Finishing rootfs write</CMD>
+
+	<CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
+</LIST>
+
+<LIST name="Android-EVK-SD" desc="Choose SD android as media">
+  <!-- Android Profile: -->
+    <CMD state="BootStrap" type="boot" body="Recovery" file ="u-boot-mx6sl-evk.bin" >Loading U-boot</CMD>
+    <CMD state="BootStrap" type="load" file="uImage" address="0x80800000"
+        loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Loading Kernel.</CMD>
+    <CMD state="BootStrap" type="load" file="initramfs.cpio.gz.uboot" address="0x80C00000"
+        loadSection="OTH" setSection="OTH" HasFlashHeader="FALSE" >Loading Initramfs.</CMD>
+    <CMD state="BootStrap" type="jump" > Jumping to OS image. </CMD>
+  
+  <CMD state="Updater" type="push" body="$ dd if=/dev/zero of=/dev/mmcblk0 bs=512 seek=1536 count=16">clean up u-boot parameter</CMD>
+	<CMD state="Updater" type="push" body="send" file="files/android/u-boot.bin">Sending U-Boot</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk0 bs=512 seek=2 skip=2">write U-Boot to sd card</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="mksdcard-android.sh.tar">Sending partition shell</CMD>
+	<CMD state="Updater" type="push" body="$ tar xf $FILE "> Partitioning...</CMD>
+	<CMD state="Updater" type="push" body="$ sh mksdcard-android.sh /dev/mmcblk0"> Partitioning...</CMD>
+
+	<CMD state="Updater" type="push" body="$ ls -l /dev/mmc* ">Formatting sd partition</CMD>
+
+	<CMD state="Updater" type="push" body="send" file="files/android/boot.img">Sending boot image</CMD>
+	<CMD state="Updater" type="push" body="$ dd if=$FILE of=/dev/mmcblk0p1">write boot.img</CMD>
+	<CMD state="Updater" type="push" body="frf">Finishing boot image write</CMD>
+	<CMD state="Updater" type="push" body="$ newfs_msdos -F 32 -O android -c 8 /dev/mmcblk0p4">Formatting sd partition</CMD>
+	<CMD state="Updater" type="push" body="$ mkfs.ext4 /dev/mmcblk0p5">Formatting system partition</CMD>
+	<CMD state="Updater" type="push" body="$ mkfs.ext4 /dev/mmcblk0p6">Formatting cache partition</CMD>
+	<CMD state="Updater" type="push" body="$ mkfs.ext4 /dev/mmcblk0p7">Formatting data partition</CMD>
+	<CMD state="Updater" type="push" body="frf">Flush the memory.</CMD>
+	<CMD state="Updater" type="push" body="$ mkfs.ext4 /dev/mmcblk0p8">Formatting misc partition</CMD>
+	<CMD state="Updater" type="push" body="pipe dd of=/dev/mmcblk0p5 bs=512" file="files/android/system.img">Sending and writting system.img</CMD>
+	<CMD state="Updater" type="push" body="frf">Finishing system image write</CMD>
+	<!-- Write userdata.img is optional, for some customer this is needed, but it's optional. -->
+	<!-- Also, userdata.img will have android unit test, you can use this to do some auto test. -->
+	<!-- <CMD state="Updater" type="push" onError="ignore" body="pipe dd of=/dev/mmcblk0p7" file="file/android/userdate.img"> Sending userdata.img(optional) </CMD>-->
+	<!-- <CMD state="Updater" type="push" body="frf">Flush userdata write</CMD>-->
+	<CMD state="Updater" type="push" body="pipe dd of=/dev/mmcblk0p2 bs=512" file="files/android/recovery.img">Sending and writting recovery.img</CMD>
+
+	<CMD state="Updater" type="push" body="frf">Finishing recovery image write</CMD>
+
+	<CMD state="Updater" type="push" body="$ echo Update Complete!">Done</CMD>
+</LIST>
+</UCL>

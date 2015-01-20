@@ -1,0 +1,679 @@
+0000000000000000000000000000000000000000 1e0367e5686a2906e95eb90f30aae922e454349d pinki <pinki.saharan@vvdntech.com> 1377487011 +0530	commit (initial): clean kernel
+1e0367e5686a2906e95eb90f30aae922e454349d 4eef65cab9afa58052dcb7ec5d8448bbca4d02a3 pinki <pinki.saharan@vvdntech.com> 1377487013 +0530	am: ENGR00081147 Support i.MX35 3stack board
+4eef65cab9afa58052dcb7ec5d8448bbca4d02a3 39ecedc4abc685a929d1bfeadb07c75094c53f42 pinki <pinki.saharan@vvdntech.com> 1377487013 +0530	am: ENGR00094618 Update .gitignore configure file
+39ecedc4abc685a929d1bfeadb07c75094c53f42 56ec95163dfcb9f0627cb1689793b9bb71de4f49 pinki <pinki.saharan@vvdntech.com> 1377487013 +0530	am: ENGR00094619 Support i.MX31 3stack board
+56ec95163dfcb9f0627cb1689793b9bb71de4f49 b0eba00910b84c77dff1d7e770337c4cf413781c pinki <pinki.saharan@vvdntech.com> 1377487013 +0530	am: ENGR00099697 Add nand driver for mx35
+b0eba00910b84c77dff1d7e770337c4cf413781c 35a8c1d4a1a84ddd2fd3689d05cf4f9b768b44b2 pinki <pinki.saharan@vvdntech.com> 1377487013 +0530	am: ENGR00102776 Support boot from NAND on i.mx35 3stack TO1
+35a8c1d4a1a84ddd2fd3689d05cf4f9b768b44b2 ad7d7f73dccf867086eee6c1ce1a905773e1e8b0 pinki <pinki.saharan@vvdntech.com> 1377487013 +0530	am: ENGR00102788 Remove CONFIG_NAND_BOOT on i.MX31 3stack
+ad7d7f73dccf867086eee6c1ce1a905773e1e8b0 85ec02b70823e35a63329477cc03e985187e1791 pinki <pinki.saharan@vvdntech.com> 1377487013 +0530	am: ENGR00103914 Support i.MX35 TO2 and 3stack board version 2
+85ec02b70823e35a63329477cc03e985187e1791 a9a75f8104e3d03d1263cc982c8e116208bcd35f pinki <pinki.saharan@vvdntech.com> 1377487013 +0530	am: ENGR00104583 MX35 can not boot up kernel
+a9a75f8104e3d03d1263cc982c8e116208bcd35f 5cdfeb5d125b1f6237c0f0050be9cafa5401e519 pinki <pinki.saharan@vvdntech.com> 1377487013 +0530	am: ENGR00107886 Porting MX31, MX35 3stack to u-boot V2009.01
+5cdfeb5d125b1f6237c0f0050be9cafa5401e519 2f77140a541a334b6479eb813bd74dedb02cfd07 pinki <pinki.saharan@vvdntech.com> 1377487013 +0530	am: ENGR00108473 Porting i.MX51 3stack TO2 support to V2009.01
+2f77140a541a334b6479eb813bd74dedb02cfd07 ae9612285ff8c69edce8a3f8c2e6d9e372c20e2d pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00108673 Add i.MX25 core to U-Boot
+ae9612285ff8c69edce8a3f8c2e6d9e372c20e2d b70d7b49ea74da978df204b527a9f3ed423dec29 pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00107840 Add U-Boot for MX25 PDK board
+b70d7b49ea74da978df204b527a9f3ed423dec29 0a4dd3d2b42fdf1231551fdf42255ead0fbaaacf pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00109851 Add nand driver for MX51 uboot
+0a4dd3d2b42fdf1231551fdf42255ead0fbaaacf 574aec28c659828020098426e9747be391fae665 pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00110586 MX31: Resolve Copyright issue for mx31 files
+574aec28c659828020098426e9747be391fae665 eeb871e9f45f0c1d5bf83034c73f891726cbf7b5 pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00112298 BBG2: Basic boot.
+eeb871e9f45f0c1d5bf83034c73f891726cbf7b5 70919b82335c2416ffd46613477880e611f9f992 pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00112273 BBG2: MMC boot support.
+70919b82335c2416ffd46613477880e611f9f992 1a69cc1994774e8e8eb732aef77acb6210fb21bd pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00112845 spi nor boot and pmic support for BBG2.
+1a69cc1994774e8e8eb732aef77acb6210fb21bd ab4382d81d2b50d58aaa8769bb0ae2bb0ef84d4e pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00113148 Add build option to uboot for different media type
+ab4382d81d2b50d58aaa8769bb0ae2bb0ef84d4e a3035526117eb8d34619f9efe0cecd4c618f8af4 pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00113439: BBG2, enable SPI NOR and MMC in one image.
+a3035526117eb8d34619f9efe0cecd4c618f8af4 484f88c897f828b9db95692794ee346838129c2e pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00113475: Add auto-complete and platform prompt for each platform.
+484f88c897f828b9db95692794ee346838129c2e efe3d3587f1c84462075276e9264265ee2ce83c1 pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00113611: Add FEC support for BBG2.
+efe3d3587f1c84462075276e9264265ee2ce83c1 70d33e3209a7234d27f166e103f235727528d6c2 pinki <pinki.saharan@vvdntech.com> 1377487014 +0530	am: ENGR00111465: Remove Watchdog disable codes in MX51 uboot.
+70d33e3209a7234d27f166e103f235727528d6c2 e43ad4ae1a623568ba6d1179d37c97123d1f167e pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00114233 Add support for programming ubifs image on nand flash
+e43ad4ae1a623568ba6d1179d37c97123d1f167e c2c5317f94dc0c3b6b26da5d4162e2d532dc1226 pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00114236 Disable NAND driver interleave mode support
+c2c5317f94dc0c3b6b26da5d4162e2d532dc1226 c333a152b6783a38437f35a5e13e69f3d616469e pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00114201: Add MMC configs to mx35 3stack config file.
+c333a152b6783a38437f35a5e13e69f3d616469e 9f220a0180bf698be8fcc9d0b369c8d3c140fe4f pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00114178 Support MMC/SD boot and enable dhcp in uboot on MX25
+9f220a0180bf698be8fcc9d0b369c8d3c140fe4f 152aee87cab6474bd335f1eb138cfde91ec2df0e pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00114393: Support Atmel AT45DB321D SPI NOR flash.
+152aee87cab6474bd335f1eb138cfde91ec2df0e bc0a77584b4212b7e46880d6ab840095b4adf81a pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00114367: Add BABBAGE machine id, BBG2.5 rev id for rootfs init.
+bc0a77584b4212b7e46880d6ab840095b4adf81a 9c5e388ca48ad3e3a25edcc0df42699c18d74855 pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00114746: Disable flash header for mx35 nand boot
+9c5e388ca48ad3e3a25edcc0df42699c18d74855 0fd89a5181ed450725b191dd1bd9fe6c7cd913eb pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00113941 MX233: Make UBOOT v2009.01 work on EVK board
+0fd89a5181ed450725b191dd1bd9fe6c7cd913eb b799078690908a4ee70e793bc08defbe6478c375 pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00115333: Enable cp command for MMC
+b799078690908a4ee70e793bc08defbe6478c375 0aeb6c2c2ae4052f5d1b6d886ebfa35de3378ac4 pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00115046: Add new MMC config option for mx35.
+0aeb6c2c2ae4052f5d1b6d886ebfa35de3378ac4 2b2ef43f86c05362d0b38785e18443cad6650021 pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00115592: Replace whitespaces with tabs in Makefile
+2b2ef43f86c05362d0b38785e18443cad6650021 9cae3b1cc6c10a5a2c7f1eb9cdefa29046e414aa pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00116140 MX51 3stack low level does not set M4IF correctly
+9cae3b1cc6c10a5a2c7f1eb9cdefa29046e414aa 116fab085381451217ab559d5f631295c4526191 pinki <pinki.saharan@vvdntech.com> 1377487015 +0530	am: ENGR00116083: Recovery mode support for Android on mx51.
+116fab085381451217ab559d5f631295c4526191 405f208e504432263fc3be2087df2fb3ea1f7d56 pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: ENGR00116203: Change nand Makefile to use CONFIG_MXC_NAND.
+405f208e504432263fc3be2087df2fb3ea1f7d56 efffd86dcd1f0ff74636541086096ecfd815d369 pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: ENGR00116243: I2C support for mx51 3ds board.
+efffd86dcd1f0ff74636541086096ecfd815d369 1839efc93a059453428e5a1630c8d757f68acef9 pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: ENGR00116472-1 U-BOOT upgrade to V2009.08
+1839efc93a059453428e5a1630c8d757f68acef9 5d06ee7af630f46eff69fe0234d13de43cda3851 pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: u-boot v2009.08 sd/mmc support.
+5d06ee7af630f46eff69fe0234d13de43cda3851 db6eac6d0e94ee9ea549abf1e02bfe059b58eab3 pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: ENGR00116504-1: Sync clock and l2cc code with redboot.
+db6eac6d0e94ee9ea549abf1e02bfe059b58eab3 a9df722b29bbb2d0e5ff62c75203b3ac823e9880 pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: ENGR00116504-2: Add mx51 bbg to3 support.
+a9df722b29bbb2d0e5ff62c75203b3ac823e9880 29c61392f9d8dfe693dd369dadeceac0f97a032b pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: ENGR00116924 Uboot: Boot up hang at detecting NAND when cold boot
+29c61392f9d8dfe693dd369dadeceac0f97a032b 9b5c38d73628ae63d8adae15529854fcc409842a pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: ENGR00117616: PATA support in u-boot.
+9b5c38d73628ae63d8adae15529854fcc409842a 6dfbe06ea115d117f0176dacbe9e3273f742fdef pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: ENGR00116772 Workaround for ARM errata ID #468414
+6dfbe06ea115d117f0176dacbe9e3273f742fdef f89628fef2a0bb042dd48c5afefa963219ba2013 pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: ENGR00118294: Misc changes for v2009.08 upgrade.
+f89628fef2a0bb042dd48c5afefa963219ba2013 9f08c6ac45d19befde8b135fe231ac711ce4e919 pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: ENGR00118362: Correct recovery NAND cmd
+9f08c6ac45d19befde8b135fe231ac711ce4e919 f450e3f0e17595bd3b72a681407c1d9bf82e1cf6 pinki <pinki.saharan@vvdntech.com> 1377487016 +0530	am: ENGR00118428 MX233 Uboot: reslove the build error for branch imx_v2009.08
+f450e3f0e17595bd3b72a681407c1d9bf82e1cf6 fd95e23299b9998e12f9a4ec5856e675e88ae0c1 pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00118576 MX25: Support Smc911x ethernet
+fd95e23299b9998e12f9a4ec5856e675e88ae0c1 10f28a03a36d7a92089c3c9be9ae028326dec547 pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00118647 Fix smc911x receive packet length not set correctly
+10f28a03a36d7a92089c3c9be9ae028326dec547 3dfae2080da219ef6150bf12159937db53d00e28 pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00118682 Update the MX25 MAX Priority
+3dfae2080da219ef6150bf12159937db53d00e28 6ec493bf925688b94d653eb0b9a83cfb568017ad pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00118816 Fix reboot/reset failure with image on nand
+6ec493bf925688b94d653eb0b9a83cfb568017ad fdc0137cb7bb617ee6ea3e027f1fa7653a8237ef pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00118751: Some mmc card can't read and write from right offset.
+fdc0137cb7bb617ee6ea3e027f1fa7653a8237ef 63f895f2fab02c2cb90646750e5e67a2c2a9393e pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00118801: Unknown information when booting from SPI-NOR.
+63f895f2fab02c2cb90646750e5e67a2c2a9393e 687cc43cc00d223b0d6fb63b6d1986ec57d1e043 pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00118579 Enable MMU
+687cc43cc00d223b0d6fb63b6d1986ec57d1e043 af201bf4cfdcaefb3ca4a475ccbee7178bdee74b pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00118978: Timer adjustment for all platforms
+af201bf4cfdcaefb3ca4a475ccbee7178bdee74b 0312fd4128be6a43cba1b1bafbd993eee52755e2 pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00118789 Uboot:Update NAND scan scheme to support new nand type
+0312fd4128be6a43cba1b1bafbd993eee52755e2 fe63eb7bf38c1ea07e43afcebee2614f00378b55 pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00119133: MX35 can't boot due to wrong frequency setting
+fe63eb7bf38c1ea07e43afcebee2614f00378b55 e9a1b3d85529fdb60673037d02ef15de022f8cb9 pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00119171: ubifs support for android recovery mode.
+e9a1b3d85529fdb60673037d02ef15de022f8cb9 2ae4d11cca7ad503e41813f3fb9ba1a3e8c4fb1a pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00119224: mmu support for mx51 3stack and mx51 bbg
+2ae4d11cca7ad503e41813f3fb9ba1a3e8c4fb1a 1239558a4780a02e3d4c7495f581e17656b4d6f8 pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00118998: Can not get ip address when kernel boot up
+1239558a4780a02e3d4c7495f581e17656b4d6f8 c9faba437a34826d24b0324d9cb5788195e0f9f6 pinki <pinki.saharan@vvdntech.com> 1377487017 +0530	am: ENGR00119246 Add CONFIG_MXC_NAND config flag in MX25 platform
+c9faba437a34826d24b0324d9cb5788195e0f9f6 db3fe60f660cbfe7921e7d0de934a58a7b72728d pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119254: Add mmu header for mx51 build error
+db3fe60f660cbfe7921e7d0de934a58a7b72728d 0c65ba2583caf8d05919a988b4a531feee2fe365 pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119486 MX25: Improve Lan9217 ethernet transfer speed
+0c65ba2583caf8d05919a988b4a531feee2fe365 32eebbbd395329500649bc556c421294c1472ac4 pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119505 MX51 BBG: Change DDR2 settings
+32eebbbd395329500649bc556c421294c1472ac4 d9384b37764af4994576af0319eb4df4ef0555d1 pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119526 MX25: Fix mmc read/write failure on mmc uboot
+d9384b37764af4994576af0319eb4df4ef0555d1 b57d32adddc474114992596472cac392f508a33c pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119625 i.MX35: UBoot doesn't accept commands if program uboot to NOR
+b57d32adddc474114992596472cac392f508a33c de1795ea6c84c662a1fc703e0585758878dd74b6 pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119660 MX35 UBOOT: Can't boot up on 2k page size nand
+de1795ea6c84c662a1fc703e0585758878dd74b6 8ddc38ceafe5ca48d8a91134865932fe293bbd4f pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119591 Fix SPI-NOR reset issue
+8ddc38ceafe5ca48d8a91134865932fe293bbd4f a386b255d64c2f214486182acc507c3e70bcd34f pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00118739 Correct the board version of MX51 EVK
+a386b255d64c2f214486182acc507c3e70bcd34f 0664870b0292fe917a89a0c2d2e2f14d12b79e64 pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119701 MX51: merge some fixes in 200908 version
+0664870b0292fe917a89a0c2d2e2f14d12b79e64 1b50dcee0a2ccf7708a83319774e02305998b5a1 pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119715: Add multi network support for mx35
+1b50dcee0a2ccf7708a83319774e02305998b5a1 cc3ed86afcb08ab922f26dd13b7fafcdb498693f pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119716: MX28 basic support.
+cc3ed86afcb08ab922f26dd13b7fafcdb498693f 175058568148b4b916717fc06df7b3ed46a8540c pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119738: eMMC card access failed.
+175058568148b4b916717fc06df7b3ed46a8540c 67068583436292c7d336f02cf5b95ec3a02609d7 pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119706: Add esdhcv1 support.
+67068583436292c7d336f02cf5b95ec3a02609d7 01560ebeb7379b7ec5f032bbb9aa0e4a3c86374e pinki <pinki.saharan@vvdntech.com> 1377487018 +0530	am: ENGR00119834: Change PDR0 clock settings for mx35 TO2
+01560ebeb7379b7ec5f032bbb9aa0e4a3c86374e fec05dfb01cfbb07d592a9fe0451da717661a1f7 pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00119890: Set right mac addr to FEC register in init
+fec05dfb01cfbb07d592a9fe0451da717661a1f7 c68cd2bc90478d7e3d7f88dad62d6874a1f2a382 pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00119894: Read right value in mxc_i2c
+c68cd2bc90478d7e3d7f88dad62d6874a1f2a382 8182d89fcd3bf0d2c93cba6b72cee5224cdcf182 pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00120191 MX51: Update the M4IF setting
+8182d89fcd3bf0d2c93cba6b72cee5224cdcf182 0dd4c04b58ce38bc10e18384ab048904fc6791a3 pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00120203: Add fec_addr check for mx51
+0dd4c04b58ce38bc10e18384ab048904fc6791a3 2132fd17b46e576667c4c80bfd7d735e1fe25ed9 pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00120207: Change recovery mode combo keys
+2132fd17b46e576667c4c80bfd7d735e1fe25ed9 e5ed42b7a096e79fe9dc96488edf7cb8070f5fdf pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00120208: Change recovery mode boot_cmd strategy
+e5ed42b7a096e79fe9dc96488edf7cb8070f5fdf 4903487a1186d32cbeaba62d61fbf343bf2e8910 pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00120202 MX51: enable L2 cache
+4903487a1186d32cbeaba62d61fbf343bf2e8910 61184a78fec680957a67a15bb3c9c38a14dfcc2d pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00120206 iMX28 Enable Ethernet and MMC boot support
+61184a78fec680957a67a15bb3c9c38a14dfcc2d 666b9a6cde63132eae8e6138df06688b0e7abfa6 pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00120476: Add fuse support for mx51
+666b9a6cde63132eae8e6138df06688b0e7abfa6 c57a18d770e6e2b9f5048bb18446f3a60470b4e4 pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00120830: Add eMMC and eSD fast boot support
+c57a18d770e6e2b9f5048bb18446f3a60470b4e4 5d4a2a84b3b2f03049e4e8a58c15c34f6721fada pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00121029 Add MX51-BBG Uboot Firmware support
+5d4a2a84b3b2f03049e4e8a58c15c34f6721fada f22d74273ce8627a203ab2d0b39ed02813cf2ead pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00120520: Enable MMU for mx51 and mx35
+f22d74273ce8627a203ab2d0b39ed02813cf2ead ec0e768511cd337c1394bb95d6bca8344414800c pinki <pinki.saharan@vvdntech.com> 1377487019 +0530	am: ENGR00121079: Unable to get IP address in uboot
+ec0e768511cd337c1394bb95d6bca8344414800c 911244ba41a7b2ce3ed6d4a3262f590591715154 pinki <pinki.saharan@vvdntech.com> 1377487020 +0530	am: ENGR00121314: Fix mx23 and mx28 u-boot build error
+911244ba41a7b2ce3ed6d4a3262f590591715154 86a5d0351db7cbbb3a054f266e7d4069f0a5b5d5 pinki <pinki.saharan@vvdntech.com> 1377487020 +0530	am: ENGR00121504 Revert ENGR00120191 to restore M4IF values
+86a5d0351db7cbbb3a054f266e7d4069f0a5b5d5 bc746479af8a2935bc159bb5a692de54752d6be2 pinki <pinki.saharan@vvdntech.com> 1377487020 +0530	am: ENGR00121379: MX28 U-BOOT enhancements
+bc746479af8a2935bc159bb5a692de54752d6be2 080a91125c362a610a623b439389879f727f5da0 pinki <pinki.saharan@vvdntech.com> 1377487020 +0530	am: ENGR000121601: FEC not work in mx28 u-boot
+080a91125c362a610a623b439389879f727f5da0 960277b37dcfa1ca116f97f4438232114846db8b pinki <pinki.saharan@vvdntech.com> 1377487020 +0530	am: ENGR00121202 Add uboot support for MX53
+960277b37dcfa1ca116f97f4438232114846db8b a05406897fd2d45e3458ed532074f149206c9cfd pinki <pinki.saharan@vvdntech.com> 1377487020 +0530	am: ENGR00121731: Add mmu, l1cache, l2cache support for mx53
+a05406897fd2d45e3458ed532074f149206c9cfd f79c9a1d7b030d75cd0e4eaaa9bb90344ff4c0eb pinki <pinki.saharan@vvdntech.com> 1377487020 +0530	am: ENGR00121774 DDR 300Mhz support for MX53 uboot
+f79c9a1d7b030d75cd0e4eaaa9bb90344ff4c0eb 790d5d33b236cfe60cf5583920b5f09d6350b304 pinki <pinki.saharan@vvdntech.com> 1377487020 +0530	am: ENGR00121779 Support a single kernel image on MX5x parts
+790d5d33b236cfe60cf5583920b5f09d6350b304 e81f4c749606baada49f08c13edd7ec93e801670 pinki <pinki.saharan@vvdntech.com> 1377487020 +0530	am: ENGR00121832: Some code reconstructure for u-boot
+e81f4c749606baada49f08c13edd7ec93e801670 81f25e54f6901ad82c434bfbab3191d6a507483f pinki <pinki.saharan@vvdntech.com> 1377487020 +0530	am: ENGR00121976 UBOOT: some fix for SD/MMC card
+81f25e54f6901ad82c434bfbab3191d6a507483f 9449c5a89dbe3c28ad9922c75acc0a1ba260ceaf pinki <pinki.saharan@vvdntech.com> 1377487020 +0530	am: ENGR00122046 Update DDR init script for MX53 EVK
+9449c5a89dbe3c28ad9922c75acc0a1ba260ceaf 01c4b6f3a13b9a7fb4b9dc7cd92c96c463b13c65 pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00122050: mmc can't read data whose size exceeds 32M
+01c4b6f3a13b9a7fb4b9dc7cd92c96c463b13c65 c91c4cb6b97f6ea1b15010a4f4d2a8eddf284b2d pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00119033: System can not find MMC/SD card in SD slot 1
+c91c4cb6b97f6ea1b15010a4f4d2a8eddf284b2d d742a9eae16a0f9236d42ed9ee5898f5c6da9f77 pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00122085 MX35 Add Uboot Firmware support
+d742a9eae16a0f9236d42ed9ee5898f5c6da9f77 e6196b89ef2b2fb188b467ad17459caccbdfce0e pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00122203 UBOOT: Add MX53 ARM2 board support
+e6196b89ef2b2fb188b467ad17459caccbdfce0e f74d599b7e0af596630c0bfd1d09b59901440b4b pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00122217 Missed iomem_valid_addr in updater configration
+f74d599b7e0af596630c0bfd1d09b59901440b4b d7d47d4d37c0227344e635f18d394e76ec4685fc pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00122030 Mfg Firmware support fot imx25
+d7d47d4d37c0227344e635f18d394e76ec4685fc 14a7ea86c90c05d0055ea0cc5b91dd1a305ff75a pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00122395: fix license declaration issue in fsl_esdhc.h
+14a7ea86c90c05d0055ea0cc5b91dd1a305ff75a 0ee12944c5c79f4b0f524d0d50455f96f38489b7 pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00122342: missing mx23 evk machine ID setting
+0ee12944c5c79f4b0f524d0d50455f96f38489b7 2f5facb0f2bafc342eddeb1c89328daa4219a85d pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00122643: Integrate linear PMIC
+2f5facb0f2bafc342eddeb1c89328daa4219a85d 698bd1e346debbc5b50170e1e0ca8044dc00146d pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00122980: Change default env dev to mmc for bbg
+698bd1e346debbc5b50170e1e0ca8044dc00146d 68e12af65067b09580b38bdd2c9d250d2d2d4076 pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00123265 UBOOT:Preserve NAND bad block indication
+68e12af65067b09580b38bdd2c9d250d2d2d4076 9891c61846e8fb94729941c90d8537606e6b9e65 pinki <pinki.saharan@vvdntech.com> 1377487021 +0530	am: ENGR00123278: Support clock operation functions
+9891c61846e8fb94729941c90d8537606e6b9e65 96f569569fd7b34ff66184a5cc114eafe4c3f87a pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00123418: Add peripheral clock setup support
+96f569569fd7b34ff66184a5cc114eafe4c3f87a 5ca46f045301c32e7b4aa0ef43c9e8f87c62cfac pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00123488 MX53 Board Identification
+5ca46f045301c32e7b4aa0ef43c9e8f87c62cfac 8dc906ea8b2e20c43013f637c93eec882c161f9f pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00123630 Set ddr clk clock according to the board ID
+8dc906ea8b2e20c43013f637c93eec882c161f9f 16e40b943601dd2a64fd5ec39ad0c773e3ab5ec8 pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00123641 MX53: Add DDR3 CPU board support
+16e40b943601dd2a64fd5ec39ad0c773e3ab5ec8 1449fc37cedd13815ca0bcac077ed23065ac8b72 pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00123870 MX53: Set AXI_B clock to 200Mhz
+1449fc37cedd13815ca0bcac077ed23065ac8b72 1f8b8c38d739dce4ad2bd36e057ddb36274c6430 pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00123551: Add mx25 splash screen support
+1f8b8c38d739dce4ad2bd36e057ddb36274c6430 f1832cefeea6f15ba9011959ed8285ac879abc66 pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00124100: Add support for saving env data to active mmc device
+f1832cefeea6f15ba9011959ed8285ac879abc66 9a2049276053444b692d1e70e99079177e0f3fcb pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00124195 Uboot:Pass EVK RevB board ID to kernel
+9a2049276053444b692d1e70e99079177e0f3fcb 1e378e01ba57ad1c435e7e3d022ee4402db9f448 pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00123484 mx28:support saving environment into sd1
+1e378e01ba57ad1c435e7e3d022ee4402db9f448 b35324cdfae1358fc24d5153914fec7d86ad0db2 pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00124391 mx35: update mfg config file
+b35324cdfae1358fc24d5153914fec7d86ad0db2 d7c8b52ee792c9ac7953b18acb3ecfdb06f2631a pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00122651: Add dwc_ahsata support
+d7c8b52ee792c9ac7953b18acb3ecfdb06f2631a eab30efbd4d23d22af6712f6e375bf2c229e0d3c pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00123782 Fix boot partition problem for emmc
+eab30efbd4d23d22af6712f6e375bf2c229e0d3c 0d41d783bdfca8926bf87053ca2f1efea937fda6 pinki <pinki.saharan@vvdntech.com> 1377487022 +0530	am: ENGR00124652 UBOOT: MX53 env fails to load when booting from 2nd slot
+0d41d783bdfca8926bf87053ca2f1efea937fda6 dceb4424ff428468944eb76125accdeffc761020 pinki <pinki.saharan@vvdntech.com> 1377487023 +0530	am: ENGR00124710 MX53 Uboot: Add MFG tool support
+dceb4424ff428468944eb76125accdeffc761020 c1cd4d0133d239049176038153b3ded3db44bf49 pinki <pinki.saharan@vvdntech.com> 1377487023 +0530	am: ENGR00124819 Uboot reading/writing sd card fails
+c1cd4d0133d239049176038153b3ded3db44bf49 0add0c7e5eb40ff29ac041d26a82c7e292fe03e9 pinki <pinki.saharan@vvdntech.com> 1377487023 +0530	am: ENGR00124908 CSPI: make spi_get_cfg platform specific
+0add0c7e5eb40ff29ac041d26a82c7e292fe03e9 de015fdd4eb2031b59a85c3b249eae23fbed0d7e pinki <pinki.saharan@vvdntech.com> 1377487023 +0530	am: ENGR00124359 Add uboot support for MX50
+de015fdd4eb2031b59a85c3b249eae23fbed0d7e 8af4594bb7831c9b9867343e1d5a69a28b3fb1df pinki <pinki.saharan@vvdntech.com> 1377487023 +0530	am: ENGR00124953 Uboot:Fix the build break for MX51 BBG board
+8af4594bb7831c9b9867343e1d5a69a28b3fb1df 6f17c193316fbb806058dab9ed74e353b23c743a pinki <pinki.saharan@vvdntech.com> 1377487023 +0530	am: ENGR00124954 MX50: init sys by ROM plug-in feature
+6f17c193316fbb806058dab9ed74e353b23c743a 83f4b6e5ec7b1dbbebc8bd68f7c47041949eb47f pinki <pinki.saharan@vvdntech.com> 1377487023 +0530	am: ENGR00124951 Uboot cannot initialize MMC cards
+83f4b6e5ec7b1dbbebc8bd68f7c47041949eb47f 5258550b7b2a1244c98f9fe1a35a097c9d4de3b1 pinki <pinki.saharan@vvdntech.com> 1377487023 +0530	am: ENGR00124912 MX53: Fix board ID check issue
+5258550b7b2a1244c98f9fe1a35a097c9d4de3b1 e1f82cd785ada718b10e9a54dc1a524fa61fde11 pinki <pinki.saharan@vvdntech.com> 1377487023 +0530	am: ENGR00124627: Dynamic SD slot support for env data.
+e1f82cd785ada718b10e9a54dc1a524fa61fde11 44caa0c0c0a0f939ca0148ebeb45be8f86edf565 pinki <pinki.saharan@vvdntech.com> 1377487023 +0530	am: ENGR00124984 MX53:Add spi_get_cfg function support
+44caa0c0c0a0f939ca0148ebeb45be8f86edf565 197e9dc828fbad4b3178cceaebfd17f98bfc3fe4 pinki <pinki.saharan@vvdntech.com> 1377487023 +0530	am: ENGR00125042 mx35: Fix error in a comment for header file
+197e9dc828fbad4b3178cceaebfd17f98bfc3fe4 d69c5b43a33cff387ed040986453af6609e61d78 pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00125045 MX53 Uboot: Adjust VDDGP voltage
+d69c5b43a33cff387ed040986453af6609e61d78 6942ef86d5564e18c14a65d0c8c9ff8be1832f18 pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00123924: Reconstructure fuse files and add fuse to mx53.
+6942ef86d5564e18c14a65d0c8c9ff8be1832f18 b2d3dc7b0376503c7a7bd5d75a89d3796440b583 pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00125174: MX50: change memory configurations
+b2d3dc7b0376503c7a7bd5d75a89d3796440b583 7a5868fd91630ca3b0f9b83e38aed3b44092955c pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00125036 Uboot Add eMMC 4.4 support
+7a5868fd91630ca3b0f9b83e38aed3b44092955c cdaee618e0864e2e336c1cc2c18db589a5d9f7ad pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00125220 MX28: SD(slot0)boot dhcp failed
+cdaee618e0864e2e336c1cc2c18db589a5d9f7ad 17d81f32369cd092bea90d4da5404bc4c10a423f pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00125613 mfg-tool: Add mx50 mfg firmware support
+17d81f32369cd092bea90d4da5404bc4c10a423f 4ff2bc7d5ad4e5aa82d8b5224ef984ae0565d5df pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00125735 iMX28 read mac address from fuse
+4ff2bc7d5ad4e5aa82d8b5224ef984ae0565d5df 4396b6c481fd9e9beb54dac0a82ae781d78c3d78 pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00125757 mx28: change the boot mode offset to TO1.2 version
+4396b6c481fd9e9beb54dac0a82ae781d78c3d78 7a482e95e7df0e92c63997c4be4106df89a55e4e pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00125324: Add splash screen code and support for epdc
+7a482e95e7df0e92c63997c4be4106df89a55e4e 1c2d7f92f2442782901fdfdf1ebc5401f76d9e6f pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00125237: Fix incorrect copyright info.
+1c2d7f92f2442782901fdfdf1ebc5401f76d9e6f de063469f6bde8a1b821c12766bbf7d14fa8555d pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00126079: Add clk command support for mx51
+de063469f6bde8a1b821c12766bbf7d14fa8555d 41c3393e1e5176a774ccfacaedc30a455eb4a798 pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00126474 UBOOT: update DDR script on MX50 ARM2
+41c3393e1e5176a774ccfacaedc30a455eb4a798 4e413c3f22c25df4e9b5928c9d3896afa33ffed5 pinki <pinki.saharan@vvdntech.com> 1377487024 +0530	am: ENGR00126566 MX50:Aligned LPDDR2 initialization to the latest script
+4e413c3f22c25df4e9b5928c9d3896afa33ffed5 af7f6b1f2c5e5cdc1ad684825c1ec11919da0237 pinki <pinki.saharan@vvdntech.com> 1377487025 +0530	am: ENGR00126764 MX50: Set the memroy size to 512M on LPDDR2 board
+af7f6b1f2c5e5cdc1ad684825c1ec11919da0237 87b64e21e03ef79b3a666974405396a8ac5eb936 pinki <pinki.saharan@vvdntech.com> 1377487025 +0530	am: ENGR00127368 UBOOT: Make the android recovery code common for platforms
+87b64e21e03ef79b3a666974405396a8ac5eb936 e6066f8fab9d9ce140ef64c66de976be218c5f9a pinki <pinki.saharan@vvdntech.com> 1377487025 +0530	am: ENGR00131619 UBOOT: Gcc 4.4.x complains weak inline
+e6066f8fab9d9ce140ef64c66de976be218c5f9a 82a9d0d8ce1d54022760c92c0d88aa63f54d2ad2 pinki <pinki.saharan@vvdntech.com> 1377487025 +0530	am: ENGR00131712 UBOOT:add DDR2 support for IMX50
+82a9d0d8ce1d54022760c92c0d88aa63f54d2ad2 ed826efa6da090a8aeb472c4266f3faeaa7496fe pinki <pinki.saharan@vvdntech.com> 1377487025 +0530	am: ENGR00127167: Add gpmi nfc and apbh dma support for mx50.
+ed826efa6da090a8aeb472c4266f3faeaa7496fe 00cb2f5844d8bb55dfc8e6256c6776b28247da06 pinki <pinki.saharan@vvdntech.com> 1377487025 +0530	am: ENGR00131578: Add android recovery mode support for mx53
+00cb2f5844d8bb55dfc8e6256c6776b28247da06 9e72fa4270c5ae409dbb2c8c59df00ded5d890f5 pinki <pinki.saharan@vvdntech.com> 1377487025 +0530	am: ENGR00131662: Fix that iram boot don't work
+9e72fa4270c5ae409dbb2c8c59df00ded5d890f5 fc069ccbb8142852257a69f00bb03cb8a3697fcb pinki <pinki.saharan@vvdntech.com> 1377487025 +0530	am: ENGR00131705-1 rename mx53_evk folder as mx53_rd
+fc069ccbb8142852257a69f00bb03cb8a3697fcb 99d87731864498a3008334f268e1ff8b81aa49d3 pinki <pinki.saharan@vvdntech.com> 1377487025 +0530	am: ENGR00131705-2 Add MX53 ARD support
+99d87731864498a3008334f268e1ff8b81aa49d3 95062cf008afcf47ef8e028b1d2158007039498f pinki <pinki.saharan@vvdntech.com> 1377487025 +0530	am: ENGR00131705-3 Import new mach-type header file
+95062cf008afcf47ef8e028b1d2158007039498f 6bf933f55fd5fdf4d56b68044c93b05aa179a30d pinki <pinki.saharan@vvdntech.com> 1377487025 +0530	am: ENGR00131705-4 MX53: fix typo error for recovery
+6bf933f55fd5fdf4d56b68044c93b05aa179a30d f8cf19ce19179fe25a98841a046154ebe0c839ae pinki <pinki.saharan@vvdntech.com> 1377487026 +0530	am: ENGR00131792: Fix mx50 lpddr2 build errors
+f8cf19ce19179fe25a98841a046154ebe0c839ae a4ba8ef3d4edbda145521fdd4ded8bb32e605a9a pinki <pinki.saharan@vvdntech.com> 1377487026 +0530	am: ENGR00131779: Use serial_mxc as uart driver for all platforms
+a4ba8ef3d4edbda145521fdd4ded8bb32e605a9a 835072759866c39d658ae1600dc4fd9f353d85f8 pinki <pinki.saharan@vvdntech.com> 1377487026 +0530	am: ENGR00131691 MX50 RDP Uboot
+835072759866c39d658ae1600dc4fd9f353d85f8 cc3bca9de2a4cbfc63b4d5f1649eb85da3bc7ac3 pinki <pinki.saharan@vvdntech.com> 1377487026 +0530	am: ENGR00131840 MX53 ARD:use serial_mxc as uart driver
+cc3bca9de2a4cbfc63b4d5f1649eb85da3bc7ac3 78dd32ef4769b7a8bba76f9c5a83ac33f4eb6ae1 pinki <pinki.saharan@vvdntech.com> 1377487026 +0530	am: ENGR00131924: using ext4 as default recovery filesystem
+78dd32ef4769b7a8bba76f9c5a83ac33f4eb6ae1 ea718467d318eb25f5a0db76d68149086104c884 pinki <pinki.saharan@vvdntech.com> 1377487026 +0530	am: ENGR00131936 MX5X corrent mx53_evk mx51_BBG android default env setting
+ea718467d318eb25f5a0db76d68149086104c884 54ffc9e4a1df78e1b987125c9b8f2460d72e4268 pinki <pinki.saharan@vvdntech.com> 1377487026 +0530	am: ENGR00132014: nand read and write page may fail in some pages
+54ffc9e4a1df78e1b987125c9b8f2460d72e4268 b82e7f5a64951581c17ab4d5a093062217fbcd8e pinki <pinki.saharan@vvdntech.com> 1377487026 +0530	am: ENGR00132526 MX50 RDP Update to latest LPDDR2 script
+b82e7f5a64951581c17ab4d5a093062217fbcd8e 45c2dfa7ea0f60551bbab499c766c544c49fdbd3 pinki <pinki.saharan@vvdntech.com> 1377487026 +0530	am: ENGR00132618 MX53 MFG:use serial_mxc as uart driver
+45c2dfa7ea0f60551bbab499c766c544c49fdbd3 fa185a3a96233a4698f69d332eabae0bf6691e50 pinki <pinki.saharan@vvdntech.com> 1377487026 +0530	am: ENGR00132656 MX53 ARD: Add MFG tool support
+fa185a3a96233a4698f69d332eabae0bf6691e50 327ad6cbd0f1bcf258acaa0f0ed4356ccce66204 pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00132617 MX53: add NAND support
+327ad6cbd0f1bcf258acaa0f0ed4356ccce66204 865a9181ab6fae33234acd16cd21a4a3c5312b27 pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00132709 MX53: add "clk nfc" command support
+865a9181ab6fae33234acd16cd21a4a3c5312b27 7b4f3caf75c38c1c0c232b83bafc355c5629f973 pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00132727 NAND: remove REG_NFC_ONE_CYCLE calling
+7b4f3caf75c38c1c0c232b83bafc355c5629f973 4edf649a6c2019977e77af3780fa22d041b0da90 pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00132758 correct NFC_CLK definition
+4edf649a6c2019977e77af3780fa22d041b0da90 0d6d70da65039c84b6f0ae3e4ec48a12cb2d682b pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00132759 MX53: use 32K CLK as GPT source
+0d6d70da65039c84b6f0ae3e4ec48a12cb2d682b 281c9c22fd357f43e63d809389a4763f7b2c2e13 pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00132886 mx50-rdp: add mx50 rdp board mfg-tool firmware defconfig
+281c9c22fd357f43e63d809389a4763f7b2c2e13 1f4de1571bedb5a3dbadc6aa5d261549665f2b86 pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00132957 mfg-tool: should add stop usb operation for mx50 rdp
+1f4de1571bedb5a3dbadc6aa5d261549665f2b86 ad0a14f5affcb018b2f78070bd87ca4af1914651 pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00132965 add MT29F16G08ABACA NAND description
+ad0a14f5affcb018b2f78070bd87ca4af1914651 cffb644d59217b0f1323a75ca7e6a1b5664ed2e0 pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00133049 Support nand flash for MX28
+cffb644d59217b0f1323a75ca7e6a1b5664ed2e0 a43c415fc739a53dc557c1625ec800f1cb2810d7 pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00133530 plug-in support mfgtools and sb_loader
+a43c415fc739a53dc557c1625ec800f1cb2810d7 88c0436a7c7b8bcd5855e7ca513658aeb007b897 pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00132909 MX53 Uboot: Support for TO2
+88c0436a7c7b8bcd5855e7ca513658aeb007b897 237011a91d9751da1c2877e70b3b5522ea009fc3 pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: Get common/cmd_fastboot.c and include/fastboot.h from omap uboot git. The code realized common Android USB fastboot protocol.
+237011a91d9751da1c2877e70b3b5522ea009fc3 e4b331d2df8f89f46831057d4cde3214166cac6d pinki <pinki.saharan@vvdntech.com> 1377487027 +0530	am: ENGR00133743 Change code style of fastboot code to pass review-commits.
+e4b331d2df8f89f46831057d4cde3214166cac6d 38f972c02b988eebc148fcc56e98c6c625648440 pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR00133756:UBOOT:NAND:Remove the 2G limitation from NAND driver
+38f972c02b988eebc148fcc56e98c6c625648440 5aba2600a0102bf223731bd2e30b785bbf667221 pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR00133689 MX51: set MC13892 charge output voltage as 4.2V
+5aba2600a0102bf223731bd2e30b785bbf667221 9c63d3df71b64c21e5e16310bb474776c0c83531 pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR00133551-1 Add freescale usb udc support for i.mx51 platform.
+9c63d3df71b64c21e5e16310bb474776c0c83531 30694c7f4bb6d6a25954c9ae64561c3eff5edb7a pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR00133551-2 Add fastboot driver support for android.
+30694c7f4bb6d6a25954c9ae64561c3eff5edb7a cf69ef9d6630d6c151369041572d4c1046aeae1d pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR00133124: Add nand support for mx50 rdp
+cf69ef9d6630d6c151369041572d4c1046aeae1d f0734544b26aa460d0b7e833d81bb87937fe6035 pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR00134098-1 MX51: Update fastboot usb init seq
+f0734544b26aa460d0b7e833d81bb87937fe6035 12d180c59ad541587a123fad8e7bcc89003102fb pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR00134098-2 MX53: Add fastboot support for android.
+12d180c59ad541587a123fad8e7bcc89003102fb 9548c63f49e779ff1e87b4cdf7f7a6ec921683d3 pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR00133579 Uboot ESDHCv3 Remove workaround for DLL
+9548c63f49e779ff1e87b4cdf7f7a6ec921683d3 24b62739245a6c0a2a9fa8e8f1b7b9eeb5dff963 pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR00133437 MX50 Uboot support for TO 1.1.1 precode
+24b62739245a6c0a2a9fa8e8f1b7b9eeb5dff963 2ef3eb280338f95d36b7164e144e9cc9c0620120 pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR12345678 Change ddr write delay in the PHY
+2ef3eb280338f95d36b7164e144e9cc9c0620120 41f47e53b36b5dc344688aff42468bf3979d9d9e pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR00025557: MX50 Add ZQ calibration support for TO1.1.1.
+41f47e53b36b5dc344688aff42468bf3979d9d9e 86be4f0164d6ade77bd626c3ea17329d7af0bfa7 pinki <pinki.saharan@vvdntech.com> 1377487028 +0530	am: ENGR00133744: Merge mx50_arm2 to mx50_rdp
+86be4f0164d6ade77bd626c3ea17329d7af0bfa7 48e753e43ecbe44003d89920a352f73018d9fabe pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: NAND: Update to support 64 bit device size
+48e753e43ecbe44003d89920a352f73018d9fabe 4cb8a50a6286c98e64ee9a9f97858a9ebebd26c1 pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: ENGR00134220-1 NAND: fix up the chip select handling
+4cb8a50a6286c98e64ee9a9f97858a9ebebd26c1 ace31ac42c2b4f22f3991fca20d2e8e0cab1a357 pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: ENGR00134220-2 Need use CONFIG_SYS_NAND_MAX_CHIPS
+ace31ac42c2b4f22f3991fca20d2e8e0cab1a357 20cf966de1aea95a3dc97157d42aff86c74a7115 pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: ENGR00134220-3 Fix the nand bad command issue
+20cf966de1aea95a3dc97157d42aff86c74a7115 a2af3c3b1f360ed434ce8c40b46c790eac85b0f5 pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: ENGR00136031 mfgtool: sync config file for mx50 rdp
+a2af3c3b1f360ed434ce8c40b46c790eac85b0f5 7339ef81bb8a263d59d7cf63f1afb0dc22bac1b6 pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: ENGR00136042 Add ZQ calib config and update script for DDR2
+7339ef81bb8a263d59d7cf63f1afb0dc22bac1b6 34d1539b85eb37b33791401375da37d8f7660d56 pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: ENGR00136081 DDR script update for MX53 TO2 ARD
+34d1539b85eb37b33791401375da37d8f7660d56 825bbef0d3fc63e2c670584c2bbdd0cf85cfd1b2 pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: ENGR00136170 MX50 Add ZQ calibration revision for TO1.1
+825bbef0d3fc63e2c670584c2bbdd0cf85cfd1b2 fe8e0f6f18026f482bbea58ef0dacb5e4b1974c1 pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: Add linux framebuffer header include/linux/fb.h
+fe8e0f6f18026f482bbea58ef0dacb5e4b1974c1 86fca94b05954b293d69ac1b30bea114b656bde6 pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: MX51: Add IPU driver for video support
+86fca94b05954b293d69ac1b30bea114b656bde6 09950617a1d52bdb87ee24279b8ae13efdf73772 pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: MX51: Add video support
+09950617a1d52bdb87ee24279b8ae13efdf73772 4bead1a166d087bfd0a535ea6a0fd21bc5ecfc47 pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: ENGR00136038: Remove config CONFIG_EMMC_DDR_MODE
+4bead1a166d087bfd0a535ea6a0fd21bc5ecfc47 e3f3f3a6c631c67335b7f3be462fa6e66958f1ab pinki <pinki.saharan@vvdntech.com> 1377487029 +0530	am: ENGR00133727: uart outputs messy code when kernel starts on mx51
+e3f3f3a6c631c67335b7f3be462fa6e66958f1ab c8b67c7dcec32edf0e872b44849e5fd9fe4b930f pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00134068 MX51 BBG:Support CLAA WVGA splashimage
+c8b67c7dcec32edf0e872b44849e5fd9fe4b930f a914aa7c1a85d2e746c30f12645e88eb56ac8763 pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00137214 MX50: Turn on ZQ calib config by default and fix hang problem
+a914aa7c1a85d2e746c30f12645e88eb56ac8763 ec00150fe51eb5f21bda2c6406045d7265cf571a pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00137273 uboot: update the android default env for 2.6.35 kernel
+ec00150fe51eb5f21bda2c6406045d7265cf571a 2bd813813d2ae4953030089520c73bbc28eba68a pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00137211 U-Boot MX5x: Incorrect GPL license header on files
+2bd813813d2ae4953030089520c73bbc28eba68a e60a18b39ada67a83a0e6e1ea5f97a6b6e31e6d9 pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00137390 UBOOT:NAND: BBT not found on MX53 board
+e60a18b39ada67a83a0e6e1ea5f97a6b6e31e6d9 8f034e9a3dbf985147ccd44fde5ac3da478ac31b pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00137372 MX53: Switch back to use DCD and update DDR scripts
+8f034e9a3dbf985147ccd44fde5ac3da478ac31b f0db36d58217f4209c82f452ec4eb9a35fcf6dd7 pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00137408: Add FAT32 support
+f0db36d58217f4209c82f452ec4eb9a35fcf6dd7 3e0e04683279467eb851284e2f6eeeaabafbe83d pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00136863-1: Change mmc framework architecture.
+3e0e04683279467eb851284e2f6eeeaabafbe83d 7a6202c89d0d2698d51383dc2fe4cab224390118 pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00136863-2: Fix mx53 CMD12 issue.
+7a6202c89d0d2698d51383dc2fe4cab224390118 36067470e400d3ccf993cf1665e3b54be9f8b8c1 pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00137410 MX53 split board files into different folders
+36067470e400d3ccf993cf1665e3b54be9f8b8c1 728ae4119a33efde7ecc5dc91595d42c2152074e pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00136075 MX53: Add SMD board support
+728ae4119a33efde7ecc5dc91595d42c2152074e 16c78222a88aec7dce136bf1ad60e599a02158c5 pinki <pinki.saharan@vvdntech.com> 1377487030 +0530	am: ENGR00137497-1 Import new mach-type header file
+16c78222a88aec7dce136bf1ad60e599a02158c5 275590506b04e35cf99bfd02f3e9d33204c8b00a pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137497-2 MX53: Add LOCO board support
+275590506b04e35cf99bfd02f3e9d33204c8b00a 1223e5ecec066268b1ee2dcd272c9c121b62d84e pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137596 MX53 Uboot SMC911X driver needs to get mac addr from IIM
+1223e5ecec066268b1ee2dcd272c9c121b62d84e 76bb156593dda257bc6333c184ec9abd914b8f93 pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137642 MX53 Uboot Align DDR3 script for Loco and SMD boards
+76bb156593dda257bc6333c184ec9abd914b8f93 26a4cffaaf5a5daf7ade7a0214a5de186dd6bda5 pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137604: Change PLL4 to 455MHz for mx53
+26a4cffaaf5a5daf7ade7a0214a5de186dd6bda5 22bc4485ed1fcc6aacc8cfbef748f75a86144362 pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137603 Add mx53_smd_android config for android
+22bc4485ed1fcc6aacc8cfbef748f75a86144362 aca5c4ce9887b267b2945bfe634aeb7bd3647bf5 pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137713 MX53 Uboot SMSC Fix order in which mac addr bytes are read from IIM
+aca5c4ce9887b267b2945bfe634aeb7bd3647bf5 47e680dea6a06442a1a5bd89e362d64ad157d9e0 pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137766 BBG splashimage:Allocate cmap for panel_info
+47e680dea6a06442a1a5bd89e362d64ad157d9e0 0e43761450e8ad3acf3890d782241578a61e485f pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137767 IPUv3 video:Support splashimage with MMU disabled
+0e43761450e8ad3acf3890d782241578a61e485f c12e68721d6f52620b64a0ded9fa749e6f4b01bb pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137841 splashimage:Correct horizontal display position
+c12e68721d6f52620b64a0ded9fa749e6f4b01bb 608bcf7484e23b9c59c0c9deecc94b0ebeb42ccf pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00136869: SATA device can't init and a typo in sata help
+608bcf7484e23b9c59c0c9deecc94b0ebeb42ccf 6be6967f5fdf900357b03ded1e24d55f50d339ee pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137358: Add saving environment to sata device support
+6be6967f5fdf900357b03ded1e24d55f50d339ee e56b65edda9892aad9e0408e86047772aa0fe23c pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137791 MX53: Update for MFG tool
+e56b65edda9892aad9e0408e86047772aa0fe23c 3eebd867dd6aba7821da689052936c78a6b2f795 pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137894-1 Add imx pwm driver support
+3eebd867dd6aba7821da689052936c78a6b2f795 599cdd804bd942064816b71abcc396feafc293a0 pinki <pinki.saharan@vvdntech.com> 1377487031 +0530	am: ENGR00137894-2 MX53: Add ipu base addr and ipu clock
+599cdd804bd942064816b71abcc396feafc293a0 5e69c1a5bb6f26089227265165d018ddd2079fef pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00137894-3 IPU driver enhancement
+5e69c1a5bb6f26089227265165d018ddd2079fef 37884c599e54764bfd89035935751166f5509c94 pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00137894-4 IPUv3 FB: IPUv3 FB driver enhancement
+37884c599e54764bfd89035935751166f5509c94 91c61ed66f149dace0e086990b431c306970a8a2 pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00137894-5 MX53 ARD:Support splashimage
+91c61ed66f149dace0e086990b431c306970a8a2 e1b62890fde70ede139bfe67e259e309aea2acd5 pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00137894-6 MX53 SMD:Support splashimage
+e1b62890fde70ede139bfe67e259e309aea2acd5 9118985c1637d496de244f6edef27ed70284b962 pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00137552 MX53: increase VDDGP as 1.2V for 1GHZ
+9118985c1637d496de244f6edef27ed70284b962 c02618b9c7edf9295640237d5ae0a1e74a7cd8f7 pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00138040-1 MX53 SMD Android:Support splashimage
+c02618b9c7edf9295640237d5ae0a1e74a7cd8f7 a027ea57e2d7bc045228a2023df7eb688d8b571a pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00138040-2 MX51 BBG Android:Support splashimage
+a027ea57e2d7bc045228a2023df7eb688d8b571a 152b24c39ec2620c800d514ef14402aa42a2e6ae pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00138040-3 Protect splashimage related stuffs by config
+152b24c39ec2620c800d514ef14402aa42a2e6ae 767c9fbc1c401e6b854878c1e50fb4585d311d6f pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00138148 MX53 TO2.0 EVK: change the default core as 1GHZ
+767c9fbc1c401e6b854878c1e50fb4585d311d6f 454994b6b170f760285ab4368757344d70ac8871 pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00138191 disable the SPLASH SCREEN for android
+454994b6b170f760285ab4368757344d70ac8871 1607acd1d85a8cd49afc57dddec4835ffccda789 pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00138240 Disable splashimage support for PDK
+1607acd1d85a8cd49afc57dddec4835ffccda789 67ab1aadc0811ecb75a2b461093e4f8d5e59e2dd pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00138359 Change uramdisk from 6M byte offset of android fastboot
+67ab1aadc0811ecb75a2b461093e4f8d5e59e2dd 822b74bbbfbcb40d613d19c46478cbfbeeb60f80 pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00138390 android recovery, enlarge uImage size
+822b74bbbfbcb40d613d19c46478cbfbeeb60f80 cb391318e2c5c0a7c2d947d6489d9530c880e722 pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00138468-1 MX5 video:Disable DP/DC/DI/IDMAC before go to kernel
+cb391318e2c5c0a7c2d947d6489d9530c880e722 10f21156237d0dfe21e67750b649ef8784a26a5f pinki <pinki.saharan@vvdntech.com> 1377487032 +0530	am: ENGR00138468-2 Enable splashimage support for several platforms
+10f21156237d0dfe21e67750b649ef8784a26a5f 7a2b8a3ed16ddad56aacae517542380da0af3179 pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00138422-1 Fix usb connection failure if do sata init
+7a2b8a3ed16ddad56aacae517542380da0af3179 b3648d881c7e6d001682a5e1be3e408425aeeeca pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00138422-2 Add SATA storage support for android fastboot
+b3648d881c7e6d001682a5e1be3e408425aeeeca ae557c14ff217eec01c2ae7cda9947602ff78f58 pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00138422-3 Android fastboot: Pass block offset to cmd_fastboot
+ae557c14ff217eec01c2ae7cda9947602ff78f58 506ae5c13902ac0427bad8318064402aab05c4d2 pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00138534 Disable splashimage support defaultly for PDK
+506ae5c13902ac0427bad8318064402aab05c4d2 fc8e26e4b193562d40d429f9044f3f2631ab2cc2 pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00118558 MX51/MX53: change the boot command of android boards.
+fc8e26e4b193562d40d429f9044f3f2631ab2cc2 56191ceab02b0ff70e47510e37722e3b7e674784 pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00138549 Android fastboot: Support eMMC4.4 on imx53_smd
+56191ceab02b0ff70e47510e37722e3b7e674784 12016f5394f0af1aa9d144190e9a5cd49aef15bc pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00138635 MX50 Update mDDR script to use more optimized settings
+12016f5394f0af1aa9d144190e9a5cd49aef15bc 1718eedd2cb2c92f2113b27a5a7f2303d38e7a64 pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00138689 MX50 Update LPDDR2 script to use more optimized settings
+1718eedd2cb2c92f2113b27a5a7f2303d38e7a64 160ec5000da0a7cc7659e51dcebc891392c665ab pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00139120: Correct CONFIG_CMD_MMC to CONFIG_CMD_IIM for iim
+160ec5000da0a7cc7659e51dcebc891392c665ab ba6be748dd2a6c3ecb650d44085131b66c64f360 pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00139924 mx53 smd &loco: set bootup vdd GP to 1.2v
+ba6be748dd2a6c3ecb650d44085131b66c64f360 ca793a6816d287b1fc22b765579044ee06500cc1 pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00139747: Read fuse to distinguish between mx53 revA and revB
+ca793a6816d287b1fc22b765579044ee06500cc1 e010516143615de5af0470d1bf59b0e09f1aa3ca pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00138533: Fix sata write operation random failure issue
+e010516143615de5af0470d1bf59b0e09f1aa3ca 05eb3dae20b9a61dbc13b64ce7be78bd80c49803 pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00140089 MX53_SMD: update command line.
+05eb3dae20b9a61dbc13b64ce7be78bd80c49803 c21d5c89a439545a8a0f8342902b46e245f490ef pinki <pinki.saharan@vvdntech.com> 1377487033 +0530	am: ENGR00140692 Update for DDR3-based MX53 SABRE Auto boards
+c21d5c89a439545a8a0f8342902b46e245f490ef 8062ecde207c8d4591c9f0357e6b1f3bb8445af3 pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00140750 mx53smd: set the default DDR size to 512MB for android configure
+8062ecde207c8d4591c9f0357e6b1f3bb8445af3 e4140ac604cc4b144245af727118f7a316376a27 pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00140767: Improve mx5x DDR clock function
+e4140ac604cc4b144245af727118f7a316376a27 10f911af961efde13e6f837a4e4da0db8e194e20 pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00140486 Add SPI NOR Flash M25P32 driver
+10f911af961efde13e6f837a4e4da0db8e194e20 f96262547cc01e4d69c250c7708533cc409508c6 pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00140825: Add mx53 to2.1 chip id recognition
+f96262547cc01e4d69c250c7708533cc409508c6 340e25456f35fef2c09cedddee1d5be9c3b6173f pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00140824 Android: Enable fastboot support for mx50 rdp
+340e25456f35fef2c09cedddee1d5be9c3b6173f bb9234e44a1c723f7714a9ce2e168207d3d9f772 pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00140873: MMC may wrongly regconize 2GB eMMC as high capacity
+bb9234e44a1c723f7714a9ce2e168207d3d9f772 7b9cb085af204f1363685b48d94d66e323130fe2 pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00140872 Add MX50 RD3 Support
+7b9cb085af204f1363685b48d94d66e323130fe2 b4d0ba0d5b737462bbfeef4d4602f4b35f240003 pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00140982 MX53 Increase VDDGP to 1.25V for 1 GHz
+b4d0ba0d5b737462bbfeef4d4602f4b35f240003 0df7498d76c717fff49bd0cd4cc7f9de0205f79f pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00140537 mx53: update vddgp according to new data sheet
+0df7498d76c717fff49bd0cd4cc7f9de0205f79f 720e9693437dbaef788174fe393ed50a2cae8fa5 pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00141000 MX50_RDP: add android recovery support.
+720e9693437dbaef788174fe393ed50a2cae8fa5 762b1343ff42c30a1fffecf70122ef6c9895a44d pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00141058 MX50_RDP: Android Fix typo in recoevry command line
+762b1343ff42c30a1fffecf70122ef6c9895a44d defe31f9140a1007d7b81d8f1a1136f093192e68 pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00141129: Add m25p32 spi_nor support for mx53_smd
+defe31f9140a1007d7b81d8f1a1136f093192e68 a28b0ea35d0fd982fb92505bd9a4bc11820d9c65 pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00141157: Add m25p32 spi nor config to mx53_smd_android
+a28b0ea35d0fd982fb92505bd9a4bc11820d9c65 6d9acc4456d42be647b132978225f9483e3b43fa pinki <pinki.saharan@vvdntech.com> 1377487034 +0530	am: ENGR00141363: change mx53 uart clk parent to pll2
+6d9acc4456d42be647b132978225f9483e3b43fa d9465a0f5f26142d9b7202cee0c20b8e5894e839 pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00141410 MX50 RD3: Set GPIO4_16 to Enable DCDC_3V15
+d9465a0f5f26142d9b7202cee0c20b8e5894e839 d0051f527286be9b72dac4e23167e92b61e7bfb8 pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00141556: Fix copyright issue
+d0051f527286be9b72dac4e23167e92b61e7bfb8 447bf452c419901452581a6c2b5b41f585a1c772 pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00141335-1: Use bypass way to set ddr dll in mx53
+447bf452c419901452581a6c2b5b41f585a1c772 02a563b67056cfad4576d5a1b93798add635b2df pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00141335-2: get more accurate ipg_per clock frequency
+02a563b67056cfad4576d5a1b93798add635b2df c1a3ac79994e33008941280834f18b1c6b40bdca pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00141335-3: Add CONFIG_EMMC_DDR_PORT_DETECT to mx53 and mx50config files
+c1a3ac79994e33008941280834f18b1c6b40bdca 8fb1bbc70883f7e97328fe1290b33e09a35e3b55 pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00142246 MX50 Update DDR2 script to use more optimized settings
+8fb1bbc70883f7e97328fe1290b33e09a35e3b55 0a38a8c2271097b0c8717b0527f054a442d27778 pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00142247 MX50: Add PD+3 routine for all DDR types
+0a38a8c2271097b0c8717b0527f054a442d27778 d5135e89ef787eaa2fa8a94ec1374b23272bb997 pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00142259 set UART2_RXD (GP6_11) to high
+d5135e89ef787eaa2fa8a94ec1374b23272bb997 b3ddaff50839b3dbf4c10b50ad0849702997cf5a pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00141885: mx50 and mx53 reboot fail when booting from spi nor
+b3ddaff50839b3dbf4c10b50ad0849702997cf5a 3c1be14cabdad15207568ae75d626499713b439d pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00142322: mx53-smd: spi nor: can't erase 0x200000 size
+3c1be14cabdad15207568ae75d626499713b439d 1fd903326e4cdb4b5d8783c84987c4db68912b8a pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00142497 Android: MX53_SMD: check eMMC and SD recovery file.
+1fd903326e4cdb4b5d8783c84987c4db68912b8a c8ad01b839ce3c292e57590fe9cdc001f3d742e2 pinki <pinki.saharan@vvdntech.com> 1377487035 +0530	am: ENGR00142740 mx50 rdp: mfg support GPMI nand by command line
+c8ad01b839ce3c292e57590fe9cdc001f3d742e2 6e3226e557afb4c679583494e71e4cc03ee62f3a pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143178 mx53 ARD DDR3 board: add MFG tool support
+6e3226e557afb4c679583494e71e4cc03ee62f3a f4352ba2edea8f809754726212471334b634ed30 pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00142995 MX50: Enable uSDHC instead of eSDHC for SDR mode
+f4352ba2edea8f809754726212471334b634ed30 2e120a7e96d524fab09b5601cc60ff6b319a08db pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143428 mx53 ard RevB: use internal clock for sata
+2e120a7e96d524fab09b5601cc60ff6b319a08db 3b3a643d42925fb7b4b2930e74174f6afcb86cb5 pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143442 uboot: support android spi boot and mfg on mx50 rd3 board
+3b3a643d42925fb7b4b2930e74174f6afcb86cb5 e18b26cc1170c7a57cff3053e72b94f5e1b3bec4 pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143457: Don't let ROM copy .bss section
+e18b26cc1170c7a57cff3053e72b94f5e1b3bec4 b28697357c632e0fe77602a7ec1ef17f67172497 pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143461 mx51 evk: increase VDDGP as 1.1v for 800MHZ
+b28697357c632e0fe77602a7ec1ef17f67172497 b595d14f3c9691f226bf46550b212196ffc70b65 pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143469 mx53 smd: pull down GPIO_9 to reset the board
+b595d14f3c9691f226bf46550b212196ffc70b65 19a7349dd5a963867751cf4d109e64c97b261c01 pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143613 uboot: update the android ramdisk load address
+19a7349dd5a963867751cf4d109e64c97b261c01 d8a808bbcf7848e98f4dbcfdb1fb840c08d697c5 pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143570 mx53: change the default environment setting
+d8a808bbcf7848e98f4dbcfdb1fb840c08d697c5 27fb82ed2105fbb745fdeded6e7b19919c1943f1 pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143302 Add mc34708 pmic support on loco/Ripley board
+27fb82ed2105fbb745fdeded6e7b19919c1943f1 8fd0edb17e485294d2f00f155f96a2f1917cf493 pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143298: Reinit uart after using clk command
+8fd0edb17e485294d2f00f155f96a2f1917cf493 6baea7b66e893bda44b9123252672eb22b26138d pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143704: U_BOOT: Nand oobsize is wrong in some nand chips
+6baea7b66e893bda44b9123252672eb22b26138d 42d01bd1a6043607c90335c90b6c656404e5f134 pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00143837 mx50 rd3: support android boot from RD3 NAND device
+42d01bd1a6043607c90335c90b6c656404e5f134 879472df7af5b19b87306ff7472499654f12176e pinki <pinki.saharan@vvdntech.com> 1377487036 +0530	am: ENGR00144060 MX53_SMD: recovery android, update recovery command for emmc.
+879472df7af5b19b87306ff7472499654f12176e 0554c912a2151791083ff552402df0d7fe558e30 pinki <pinki.saharan@vvdntech.com> 1377487037 +0530	am: ENGR00144389 mx53 QS Ripley: change VCC from 1.35V to 1.3V QS Ripley board
+0554c912a2151791083ff552402df0d7fe558e30 0b6e6d92f80379086d8d18ab3378e461b9c684a1 pinki <pinki.saharan@vvdntech.com> 1377487037 +0530	am: ENGR00144224: MX53: Add MMU mapping for all peripherals
+0b6e6d92f80379086d8d18ab3378e461b9c684a1 cada56f90724488eda33f473fab527e2e0f93936 pinki <pinki.saharan@vvdntech.com> 1377487037 +0530	am: ENGR00151187 MX53 SMD: Kernal stopped Usb driver after reseting in stop mode
+cada56f90724488eda33f473fab527e2e0f93936 66a2f709a957f2f1f52553f023afef8e4a4a3c8c pinki <pinki.saharan@vvdntech.com> 1377487037 +0530	am: ENGR00151892 MX50: Workaround to prevent PLL1 from losing lock
+66a2f709a957f2f1f52553f023afef8e4a4a3c8c 272c32d90ba2ef001f58ce1460cc2a622136d43e pinki <pinki.saharan@vvdntech.com> 1377487037 +0530	am: ENGR00151966: MX51 - Apply SW workaround for the PLL1 unlock HW issue.
+272c32d90ba2ef001f58ce1460cc2a622136d43e 8a3f667d66709c58e9ed78a1026753883858e8c0 pinki <pinki.saharan@vvdntech.com> 1377487037 +0530	am: ENGR00144424 MX6: enable uboot for ARM2(SABREAUTO) CPU board
+8a3f667d66709c58e9ed78a1026753883858e8c0 188b5eeaff45b5148458bfbee8f027dc4d76e8da pinki <pinki.saharan@vvdntech.com> 1377487037 +0530	am: ENGR00139198: iMX61 uBoot add ENET support
+188b5eeaff45b5148458bfbee8f027dc4d76e8da a990faa35ba8e97db7905c9167d6ff0b7257abe4 pinki <pinki.saharan@vvdntech.com> 1377487037 +0530	am: ENGR00152241 MX6: enable 1G speed mode for PHY and ENET
+a990faa35ba8e97db7905c9167d6ff0b7257abe4 dabd22cb19881e8208447ce953670451b0bd689d pinki <pinki.saharan@vvdntech.com> 1377487037 +0530	am: ENGR00152439: MX51: PLL workaround should be implemented only for PLL1
+dabd22cb19881e8208447ce953670451b0bd689d c201475da68fd8d5469af1cc1d3fa515f0685b92 pinki <pinki.saharan@vvdntech.com> 1377487037 +0530	am: ENGR00139206 MX6 USDHC eMMC 4.4 support
+c201475da68fd8d5469af1cc1d3fa515f0685b92 84856d072bc85b3360d3fadf6e18ced63f18a24b pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00152755 MX6 Switch DRAM init script from plugin to DCD for emmc fastboot
+84856d072bc85b3360d3fadf6e18ced63f18a24b 2ec6609393742130b37be302e490f60d30799b7d pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00152907 MX5X: update GPU default cmdline.
+2ec6609393742130b37be302e490f60d30799b7d 505b4f50e9acfb03d14ad1117d379cd2adbaf38d pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00153394 mx50 rd3: make SDHC1 as default boot device for android
+505b4f50e9acfb03d14ad1117d379cd2adbaf38d defa28f1d7c0eb03fc0a0c459e07feddcc99fecd pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00152843 mx51/3: align the android default env with document
+defa28f1d7c0eb03fc0a0c459e07feddcc99fecd e2ddd5b87bdab4c05faace7e09cdc124c763b68f pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00151695 mx53 ddr3: update ESDREF and MR0
+e2ddd5b87bdab4c05faace7e09cdc124c763b68f c6db13fbfcda9a561fffa9726d6fc60b02fd9b5d pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00151310 mx53 smd: force warm reset as cold reset
+c6db13fbfcda9a561fffa9726d6fc60b02fd9b5d 85ee4fa370b4928e33701c30f1517c88fa89bf38 pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00143438 [MX50 RD3]DCDC_3V15 GPIO change
+85ee4fa370b4928e33701c30f1517c88fa89bf38 76c91f0b8f631aa734a8be035f4ee5daf686c58c pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00153597 [MX6]Enbale MMDC low power
+76c91f0b8f631aa734a8be035f4ee5daf686c58c 10903b675503628c48d029e9ba2f39e68fa157b2 pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00153605 fastboot: uboot cannot be burned to boot partition
+10903b675503628c48d029e9ba2f39e68fa157b2 1035ea5b0ba39f993629b7520e136a5ffe8dd90d pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00153526 mx53 pcba: add pcba board revB support in uboot
+1035ea5b0ba39f993629b7520e136a5ffe8dd90d 636429e2639075108dad3999b01dfbe2f68df875 pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00153759 mx51: fix fastboot build failed without boot partition macro
+636429e2639075108dad3999b01dfbe2f68df875 cd2cac0b1399c2d189cffdd91101da7b352a3d9f pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00153761 imx6q ipuv3: improve display quality
+cd2cac0b1399c2d189cffdd91101da7b352a3d9f 7ec4b4bba74912d9e6ccd39f3027a94ce890de0b pinki <pinki.saharan@vvdntech.com> 1377487038 +0530	am: ENGR00154400 mx53 pcba: bringup update for RevB board
+7ec4b4bba74912d9e6ccd39f3027a94ce890de0b 240dabad0a18e7bfc3af808b5c94ae27be20e546 pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00154468 mx53 pcba: Add DC-IN power supply support for revB board
+240dabad0a18e7bfc3af808b5c94ae27be20e546 609d18b950ed8adee77238f3d3b61c6ac46a85ab pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00154762 mx53_pcba: update Ripley/mc34708 USB/AUX charger settings
+609d18b950ed8adee77238f3d3b61c6ac46a85ab 8fc16af59447ddb06b898d75f85b113e844edd7f pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00154396: U_BOOT: Env config adjustment.
+8fc16af59447ddb06b898d75f85b113e844edd7f b01d088b5ccfbf27033fcd20b571d11af6456caa pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00154924 [MX6]Disable some clocks in uboot
+b01d088b5ccfbf27033fcd20b571d11af6456caa 9bbb13947057f5d296d846da396af5ff80e6a9a8 pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00154998 mx53 pcba: correct the default bootargs
+9bbb13947057f5d296d846da396af5ff80e6a9a8 9ad7a3c04782cc5ef9de35d4d167dc7050594438 pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00155018 mx53_pcba: update Ripley AUX input to 950mA and charge current
+9ad7a3c04782cc5ef9de35d4d167dc7050594438 0529487c94f0ed48fa407f10acb4ed7b5f120a44 pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00155138 mx53_smd/mx53_loco: Add i2c retry to fix DA9053 i2c NAK issue
+0529487c94f0ed48fa407f10acb4ed7b5f120a44 edb5cce28e2c8a557ad82e1a8fd385eade49d162 pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00155156 [MX6]Clean up debug info in uboot
+edb5cce28e2c8a557ad82e1a8fd385eade49d162 24ca2fbff4c9aafac515bfec4c3ff694729c492c pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00151255 mx53 QS: Enable VUSB_2V5
+24ca2fbff4c9aafac515bfec4c3ff694729c492c ea4fe747b7ec5c659e9e1fb9c275b0bc34aa4ab6 pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00155133: Add sata support for imx6
+ea4fe747b7ec5c659e9e1fb9c275b0bc34aa4ab6 caeac956ffea44c6115713e73d62ae8614c0cae0 pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00155240 mx53_smd: Fix a bug that hangs on printf() in board_init
+caeac956ffea44c6115713e73d62ae8614c0cae0 ff6df84f4a3954216ae3f1ea8911ba0bc91326a5 pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00154672: Change to use rom plugins for mx53 boards
+ff6df84f4a3954216ae3f1ea8911ba0bc91326a5 7768ec323c390805468d137dddb4529c677193a1 pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00155472 mx53_loco: support both of RevA and RevB in uboot
+7768ec323c390805468d137dddb4529c677193a1 ce37246bb69413a7988fb601d102a86301b59082 pinki <pinki.saharan@vvdntech.com> 1377487039 +0530	am: ENGR00155284 mx53_smd: move I2C access to board_init_late for system hang issue
+ce37246bb69413a7988fb601d102a86301b59082 dc2455892f883a8c0d5e0a2c2192595de30e595e pinki <pinki.saharan@vvdntech.com> 1377487040 +0530	am: ENGR00154666-1: Align u-boot mmc command with community
+dc2455892f883a8c0d5e0a2c2192595de30e595e 4febffc082078ee50e8297252c9b2609797ad843 pinki <pinki.saharan@vvdntech.com> 1377487040 +0530	am: ENGR00154666-2: Align u-boot mmc command with community
+4febffc082078ee50e8297252c9b2609797ad843 3ccfa077f5ad254634c73a6beeb9fe12268bb842 pinki <pinki.saharan@vvdntech.com> 1377487040 +0530	am: ENGR00154666-3: Align u-boot mmc command with community
+3ccfa077f5ad254634c73a6beeb9fe12268bb842 1dc6ba41cd1346e96b893a1caa85da36cd4f4ff0 pinki <pinki.saharan@vvdntech.com> 1377487040 +0530	am: ENGR00154666-4: Align u-boot mmc command with community
+1dc6ba41cd1346e96b893a1caa85da36cd4f4ff0 d0d1aff3e1d9c9035dfb2d893ba12f92740c7caf pinki <pinki.saharan@vvdntech.com> 1377487040 +0530	am: ENGR00155739: mx53 evk mmu wrong mapped two csd slots
+d0d1aff3e1d9c9035dfb2d893ba12f92740c7caf 6665bbb2a37d475510a79544d9808bc6886cb4c2 pinki <pinki.saharan@vvdntech.com> 1377487040 +0530	am: ENGR00155279: Change ESDCTL_0x82228080 to ESDCTL_0x82226080 for mx35
+6665bbb2a37d475510a79544d9808bc6886cb4c2 2cd2036acf188ca9c660f44549bd9bf7fbf1114a pinki <pinki.saharan@vvdntech.com> 1377487040 +0530	am: ENGR00155283: Set dpgdck0_2_en to 0 when freq is lower than 300MHz
+2cd2036acf188ca9c660f44549bd9bf7fbf1114a 6d9197fec835c0adcdce6ce5f6677a0e21f295f2 pinki <pinki.saharan@vvdntech.com> 1377487040 +0530	am: ENGR00139254: Enable MX6Q Uboot Splash Screen
+6d9197fec835c0adcdce6ce5f6677a0e21f295f2 ceee9527989d90165d778d0a06b59e4b62258611 pinki <pinki.saharan@vvdntech.com> 1377487040 +0530	am: ENGR00156034: Fix mx53 evk build error
+ceee9527989d90165d778d0a06b59e4b62258611 ac6cbb66f5c10aa94d14bebfbf8394b75b1933af pinki <pinki.saharan@vvdntech.com> 1377487040 +0530	am: ENGR00156098 mx53_smd/mx53_loco: DA9053 I2C SDA stuck low issue on bootup
+ac6cbb66f5c10aa94d14bebfbf8394b75b1933af 824c9783706d561407921c6b8c6d6367dead291d pinki <pinki.saharan@vvdntech.com> 1377487040 +0530	am: ENGR00156304 eMMC: Need to update partition config after changing boot partition
+824c9783706d561407921c6b8c6d6367dead291d 580b9e1c9f8c0e94cc1f9abd6cf0dad6d4dd3673 pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00156389: turn off child clocks before reconfigure perclk_root
+580b9e1c9f8c0e94cc1f9abd6cf0dad6d4dd3673 c936f5c79b3b15d66b877c215b658abc96a195ae pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00156405 ESDHC: Add workaround for auto-clock gate errata ENGcm03648
+c936f5c79b3b15d66b877c215b658abc96a195ae 96e264bacf068de963b7d8f0cd730b53301ead53 pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00156670-1 ESDHC/USDHC: Remove delay before each cmd and some bug fixes
+96e264bacf068de963b7d8f0cd730b53301ead53 0e99b9c37b56d40cb5189357ac5939a347e53b06 pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00156670-2 MMC: Fixed some bugs in common code
+0e99b9c37b56d40cb5189357ac5939a347e53b06 c429a0721f557af4983fac55fef77864297d0543 pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00155569 mc34708: change global reset time as 4s of LOCO and PCBA
+c429a0721f557af4983fac55fef77864297d0543 a8f64764ffc791c60ddab5d0008c176c34122bbb pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00157419: Correct default environment's mmc device in mx6q
+a8f64764ffc791c60ddab5d0008c176c34122bbb 4f43b7c448e88430d7f108acb98ef4a5f5aa52e8 pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00157468: Fix default environment's "mmc dev" type error
+4f43b7c448e88430d7f108acb98ef4a5f5aa52e8 c4810135ca0145fbe3c5f3f27fc8d537d8172869 pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00157538 remove VDIG_PLL setting in plug-in code
+c4810135ca0145fbe3c5f3f27fc8d537d8172869 0e1274562b18f510e8a542ab58371626942f72e3 pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00158184 mx53 smd: use highest value for unknown board revision value
+0e1274562b18f510e8a542ab58371626942f72e3 c583e32855962084996fce3f7954311ec9c980b6 pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00159696 [MX6]Enable lpddr2 board
+c583e32855962084996fce3f7954311ec9c980b6 7ef1541c95de3409092ee87e5879050904a8f07d pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00159740 Android: Fastboot: enlarge max image size to 148MB
+7ef1541c95de3409092ee87e5879050904a8f07d a753cb92927347d45d18710b44395631be611337 pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00159845 [MX6]lpddr2 board, put MMDC into power saving mode
+a753cb92927347d45d18710b44395631be611337 b969a19e27418ddbe27819abbca1765988ddc648 pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00139279-1 MX6Q: add env_embedded module for CONFIG_ENV_IS_NOWHERE
+b969a19e27418ddbe27819abbca1765988ddc648 40fbbb6095abc8de8ca365cb639853c25245507c pinki <pinki.saharan@vvdntech.com> 1377487041 +0530	am: ENGR00139279-2 MX6Q: add mfgtool support
+40fbbb6095abc8de8ca365cb639853c25245507c 6478ce86be56a5a95dc6c3ba9dc66734c911c25f pinki <pinki.saharan@vvdntech.com> 1377487042 +0530	am: ENGR00139279-3 MX6Q: invalidate the D-CACHE
+6478ce86be56a5a95dc6c3ba9dc66734c911c25f 5c55e12fb3ded9e2dd3ddf70a3ea9e923254f6e9 pinki <pinki.saharan@vvdntech.com> 1377487042 +0530	am: ENGR00156930: Update MX35 DDR2 scripts
+5c55e12fb3ded9e2dd3ddf70a3ea9e923254f6e9 c9ae4c5399fd342df138f47541b7ccd09d0e1659 pinki <pinki.saharan@vvdntech.com> 1377487042 +0530	am: ENGR00156934: Update mx35 AIPS max dbg m3if esdctl settings
+c9ae4c5399fd342df138f47541b7ccd09d0e1659 505e8897445f202d14885a56befcd65a82617665 pinki <pinki.saharan@vvdntech.com> 1377487042 +0530	am: ENGR00160507 Update the IOMUX implementation for MX6
+505e8897445f202d14885a56befcd65a82617665 7e42237bf864df2316528bab59240797225ddb76 pinki <pinki.saharan@vvdntech.com> 1377487042 +0530	am: ENGR00160725 fastboot: fix the serial number display error
+7e42237bf864df2316528bab59240797225ddb76 543454604624651e83e4b5cafedc1ab53de950af pinki <pinki.saharan@vvdntech.com> 1377487042 +0530	am: ENGR00160399 Added support for the MX6Q Sabre-lite board
+543454604624651e83e4b5cafedc1ab53de950af ed41884f71afd0d8216721988da7f68ebc838daa pinki <pinki.saharan@vvdntech.com> 1377487042 +0530	am: ENGR00160514: clean up compiler warning for mx6q
+ed41884f71afd0d8216721988da7f68ebc838daa 8642eec62d2fcd93cd578c9b1dc6087e42817642 pinki <pinki.saharan@vvdntech.com> 1377487042 +0530	am: ENGR00139221 USDHC Add SDXC UHS-I support
+8642eec62d2fcd93cd578c9b1dc6087e42817642 d1f9cc975a0b16dc19065da7c62bc987a653f627 pinki <pinki.saharan@vvdntech.com> 1377487042 +0530	am: ENGR00161004 MX6Q Uboot Rename sabreauto to arm2 board
+d1f9cc975a0b16dc19065da7c62bc987a653f627 ad72ce42dcdb6ab53fcb154b3bf25b7f7a19f0e2 pinki <pinki.saharan@vvdntech.com> 1377487042 +0530	am: ENGR00161125 Update MX6Q Sabrelite config to boot from MMC by default
+ad72ce42dcdb6ab53fcb154b3bf25b7f7a19f0e2 072794b03c06310a5cdf874e51750b229a244bae pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161133: Add spi-nor support for mx6q
+072794b03c06310a5cdf874e51750b229a244bae bb95fd70b37a317f12c1c34fed03e8cc9f388e73 pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161126 Enable Hush parser in MX6Q Sabrelite config
+bb95fd70b37a317f12c1c34fed03e8cc9f388e73 5e92af42d121bc35297f8f5f321710b8dcc5bec8 pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00139215 iMX61 Uboot support blow fuse
+5e92af42d121bc35297f8f5f321710b8dcc5bec8 d9182c0931a924f940fc47748a55b89a42caaa57 pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161277 Add fuse access capability for MX6 Sabre-lite
+d9182c0931a924f940fc47748a55b89a42caaa57 654f1729cf9dcd44d8ce3b42b2ce5a50e6fdd490 pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161294 Update MX6 code to read MAC address from fuses
+654f1729cf9dcd44d8ce3b42b2ce5a50e6fdd490 77b56b1a3d5b18087da15adb8d048dbd93bf4629 pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161254 MX6Q: Add NAND support in Uboot
+77b56b1a3d5b18087da15adb8d048dbd93bf4629 7ee6240f57bbf9894c9f849986cc7021fab5fb7a pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161296 Update the MX6 Sabre-lite environment option in the config file
+7ee6240f57bbf9894c9f849986cc7021fab5fb7a 5d63bb0df3d1cf17def34d03acd56f0a876c1142 pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161373 Move the MAC address read from fuse code to MX6 SoC file
+5d63bb0df3d1cf17def34d03acd56f0a876c1142 52d8250a6da942ad46757dd4cefb9fdddae12e00 pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161317 - MX6Q: Integrate plugin and dcd DRAM init script in uboot.
+52d8250a6da942ad46757dd4cefb9fdddae12e00 16072bfd721c20db0c55f8007bfcbbb38a99251d pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00157106 uboot mx6q: adjust IPU axi-id0/1 Qos value
+16072bfd721c20db0c55f8007bfcbbb38a99251d 41f0cf12660c26c4e8b07ea7e579ad2d5508de29 pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161415: mc34708: set 1p5
+41f0cf12660c26c4e8b07ea7e579ad2d5508de29 4a3fdc203030a6249ed6e94b51ef3e95e5b6e426 pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161354 MX6Q ARM2 U_BOOT: "mmc dev 0" or "mmc dev 1" cmds will hang
+4a3fdc203030a6249ed6e94b51ef3e95e5b6e426 3fabf3fcdebb7b738bbd0401764f6bd6ccaa92de pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161691 Manufacturing update for Sabre-lite
+3fabf3fcdebb7b738bbd0401764f6bd6ccaa92de f4131d27fb825eddcab8521715a58d05227162d4 pinki <pinki.saharan@vvdntech.com> 1377487043 +0530	am: ENGR00161846 uboot mx6q_arm2: adjust IPU axi-id0/1 Qos value
+f4131d27fb825eddcab8521715a58d05227162d4 acfbab6fc7692ba70b1217c617936b2dbfed7784 pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00161860 Fix build issue when enable NAND in Uboot
+acfbab6fc7692ba70b1217c617936b2dbfed7784 2514d20a84d7f8ecd02628512755ce224cc21724 pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00161852: remove u-boot build warnings for mx6q
+2514d20a84d7f8ecd02628512755ce224cc21724 2333b1fc9e595b6bcdbcb395346d9cf5eebf6f36 pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00155891 : Fix reboot stress test failed issue
+2333b1fc9e595b6bcdbcb395346d9cf5eebf6f36 3403b833a781d9bd3e2ea65cb31aa0c81bb4b1c0 pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00162437 uboot mc34708 pcba : add spi support on mc34708
+3403b833a781d9bd3e2ea65cb31aa0c81bb4b1c0 2b55f683057898d977170742d586b10cb3476fe3 pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00162570: MX6-Increase VDDSOC_CAP voltage to 1.2V
+2b55f683057898d977170742d586b10cb3476fe3 dfb91f43a396fea2069de9ec4274e83b18ce4843 pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00162491 Android: MX53_SMD: enter recovery mode by key.
+dfb91f43a396fea2069de9ec4274e83b18ce4843 63e5cb7672a92f7909de2858e70a176978f0ddbe pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00162709 Add Support for MX6Q Sabre Auto
+63e5cb7672a92f7909de2858e70a176978f0ddbe a3724e4acae4a179967706063b34413185846fd8 pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00162874: Add enet clk change support for mx6
+a3724e4acae4a179967706063b34413185846fd8 8a281989adf8dc26fe0561838d611b2927dba74f pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00162938 MX5: Add download_mode command in uboot to enter MFG download mode.
+8a281989adf8dc26fe0561838d611b2927dba74f 2b6ec0a6a7a3a4ea939d3203c010856813fa515d pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00162937 - FEC: Fix FEC cannot load kernel accroding tftp.
+2b6ec0a6a7a3a4ea939d3203c010856813fa515d 87301b3abd4f9323657d873b1573e1fe5cef8fa4 pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00162717 mx53_smd/mx53_loco DA9053: reset da9053 i2c and add dummy write
+87301b3abd4f9323657d873b1573e1fe5cef8fa4 8eaf70480e7a21a722764e610d94a733bf346028 pinki <pinki.saharan@vvdntech.com> 1377487044 +0530	am: ENGR00163040 - FEC : Fix ethernet cannot work after system sleep.
+8eaf70480e7a21a722764e610d94a733bf346028 cec8b1ab3866e15db9fe7cbefd3e7c7dd6f27678 pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00163239-1 mc34708: fix not charging issue in uboot
+cec8b1ab3866e15db9fe7cbefd3e7c7dd6f27678 9553e0a9c41416a1978ddba256015ee79d64cb3d pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00163239-2 mc34708: enable extra charging circuit
+9553e0a9c41416a1978ddba256015ee79d64cb3d 6b263f718b6620066e11d779af52fbfdad08b4ac pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00163370 Android: uboot: mx53_smd fix warnning message
+6b263f718b6620066e11d779af52fbfdad08b4ac d6fe32764d50e6633b66eed498b51d9d5b0877fd pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00163513 MX6Q-UBOOT : Add download_mode cmd
+d6fe32764d50e6633b66eed498b51d9d5b0877fd 490cdd507a7e7c0d61a9595ce6b185c70b7469d8 pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00163704: MX5X: add i2c recovery function in board_lateinit.
+490cdd507a7e7c0d61a9595ce6b185c70b7469d8 e9d02c1e0930bc0bd24777eb7b554e76ef995771 pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00169500 mc34708 mx53_loco: 4s power off in QS board
+e9d02c1e0930bc0bd24777eb7b554e76ef995771 a6972188e62bbb258d9d26355469ea45df368f01 pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00169654 mx53_pcba: enable DDR auto-calibration
+a6972188e62bbb258d9d26355469ea45df368f01 8a50584a95a0c7db2277695b56f98afa8462346e pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00169655 pcba : merge i2c recovery patch to pcba
+8a50584a95a0c7db2277695b56f98afa8462346e 2fc15ef2e95d0bbc0e60f260199edaa99a29c3c8 pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00169741 UBOOT : DDR3 initialization based on the MX6Q ARD
+2fc15ef2e95d0bbc0e60f260199edaa99a29c3c8 fbd6bda2f90ab1ef3c4fcd55c8fb9a50c8b69251 pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00169919 MX6Q ARM2 U-Boot : Support Pop CPU Board
+fbd6bda2f90ab1ef3c4fcd55c8fb9a50c8b69251 d51e5748f67fad54f07c68de2feddb4f4e71e264 pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00170299-1 Android: add support fastboot function
+d51e5748f67fad54f07c68de2feddb4f4e71e264 665136b913209b0bb3085c35e3598cd2939768dc pinki <pinki.saharan@vvdntech.com> 1377487045 +0530	am: ENGR00170299-2 Android:MX6Q_SL: add board support for recovery and fastboot.
+665136b913209b0bb3085c35e3598cd2939768dc 40e6ce8f1e355221791fec87c30eba8e3f8bd3f6 pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00170299-3 Android: add android board configure file.
+40e6ce8f1e355221791fec87c30eba8e3f8bd3f6 c3ee50938abe2f15cca159b55ef5960e17d0e00d pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00170372 mx6q sabrelite: make TF card as default boot media
+c3ee50938abe2f15cca159b55ef5960e17d0e00d 59634d67579cf0bfefa206ffee2f4c5bbc1ec59e pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00170405 Android: MX6Q_SL: Fix recovery key detection
+59634d67579cf0bfefa206ffee2f4c5bbc1ec59e eaa497bdb4d355996310e70dd07276b6f28ec50b pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00170516 Enable the master mode for ENET PHY on MX6 Sabrelite
+eaa497bdb4d355996310e70dd07276b6f28ec50b 744ac9db792ec0b5a53dddc24fe584b7c4b5ddff pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00170644: Enlarge mmc read size to 4M in default env
+744ac9db792ec0b5a53dddc24fe584b7c4b5ddff 45e6e7ee5fa77ec6170af45d23206ae88d499e2d pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00169544 - FEC : fix "imx5x bootp command cannot work well".
+45e6e7ee5fa77ec6170af45d23206ae88d499e2d 45ba1248cf12683127c7320c10200dc9a2403773 pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00163697 - FEC : Adjust MX53 Network stream throughput.
+45ba1248cf12683127c7320c10200dc9a2403773 8ae9d79e2ff9a298db37a473f74a592993bde050 pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00160621 [MX6]Workaround for reset issue
+8ae9d79e2ff9a298db37a473f74a592993bde050 5a0445adadfabf6794df33ac3750f0b08de6db1b pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00162642: Fix bug in setting VDDSOC voltage
+5a0445adadfabf6794df33ac3750f0b08de6db1b b9fbef4d48c248f1cc7fd878232e460576f37152 pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00170768 Android: Fix fastboot can't used on MX6Q SL MMC1 device.
+b9fbef4d48c248f1cc7fd878232e460576f37152 c1abee8cf196cde17b8cbeef38727436249cd0ea pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00170837 [MX6]Add temperatuer check into uboot
+c1abee8cf196cde17b8cbeef38727436249cd0ea 584e4388fcc0d5dbdddb8ed9f202e38a27e35bb5 pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00170876 Android: align boot commands with user guide.
+584e4388fcc0d5dbdddb8ed9f202e38a27e35bb5 0a68f9186bd3eaa1a2bec4e82a9e6795635e8695 pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00171008 MX6Q/MFGTOOL : disable the workaround for MFGTOOL
+0a68f9186bd3eaa1a2bec4e82a9e6795635e8695 7ea8acee82ec65cd85374a0bb5f844a1a128d2f8 pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00171091 [MX6]Remove workaround for reset issue
+7ea8acee82ec65cd85374a0bb5f844a1a128d2f8 1482278147a03b2ea23aa576165cf98a6492cbf1 pinki <pinki.saharan@vvdntech.com> 1377487046 +0530	am: ENGR00171115 add fec support in mx6q sabreauto board
+1482278147a03b2ea23aa576165cf98a6492cbf1 b109294208230fadff0684076bf28bc418181ea6 pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00171622 - FEC : workaround for Gb enet in sabrelite board.
+b109294208230fadff0684076bf28bc418181ea6 8117ffbd24cf8b15805937c4472e39acdd9d1fcc pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00171633 MX6Q: config: android: update default config.
+8117ffbd24cf8b15805937c4472e39acdd9d1fcc 63504b8eb390e08c50075d2eee6fcbef031949a3 pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00171872 Android: update sabrelite default config fix a typo.
+63504b8eb390e08c50075d2eee6fcbef031949a3 b7bd0c296a071da0b298c9910b2571963156ac05 pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00171771 [MX6]Need to power down PCIe by default
+b7bd0c296a071da0b298c9910b2571963156ac05 b20fa1dd2f0dd80e6fcce336cd278be4d862767f pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00171968 mx6q sabrelite: fixup the sabrelite default bootargs typo
+b20fa1dd2f0dd80e6fcce336cd278be4d862767f 2512f712798c4bb8a112484a7ccd251bb162bad9 pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00172490: FIX: PMIC registers may not be accessible in u-boot via SPI
+2512f712798c4bb8a112484a7ccd251bb162bad9 9396b071c48652d720cea9d1bdef5567f45f0347 pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00172541 Delete bootcmd_base from the MX6 Sabre-lite config
+9396b071c48652d720cea9d1bdef5567f45f0347 0437454f4e0b9e020cfee389a669709d2525bd4f pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00172343 Add suport for i.MX 6Q Sabre Smart Device
+0437454f4e0b9e020cfee389a669709d2525bd4f 19ce86c4cbc6c07b13a8df0d6ddd397cbeedfb82 pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00173579 Revert FEC: Fix FEC cannot load kernel accroding tftp.
+19ce86c4cbc6c07b13a8df0d6ddd397cbeedfb82 8b1adad81ccbbe955751b2cfc498a530422a4315 pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00173659 MX6Q_UART Change Phyisical to Virtural Port Mapping
+8b1adad81ccbbe955751b2cfc498a530422a4315 f27f3d3ee3ed9e96f604f473d2a55950a88a1f5f pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00173966-1: i.mx6dl: add the iomux head file
+f27f3d3ee3ed9e96f604f473d2a55950a88a1f5f bad262751c1279e60ef5a570246b177252f53353 pinki <pinki.saharan@vvdntech.com> 1377487047 +0530	am: ENGR00173966-2: fec: add i.mx6dl support
+bad262751c1279e60ef5a570246b177252f53353 9ad5f652d708740e4a445ae8b9e086723015858d pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00173966-3: ARM2: i.mx6dl: add the DDR script
+9ad5f652d708740e4a445ae8b9e086723015858d 3465b66f4bdaeee252574bac965ea69adc185ac3 pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00173966-4: ARM2: add initial support for i.mx6sdl
+3465b66f4bdaeee252574bac965ea69adc185ac3 4151f98388c3e7f0d687dbaf3d539859f08d14a9 pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174055: i.mx6dl: ddr: update ddr script to 400M_64bit_v1.1
+4151f98388c3e7f0d687dbaf3d539859f08d14a9 b73ce7f38d2af74bb41d77a05bdcc1a84c776ab7 pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174155: i.mx6sdl: add 32bit DDR support on ARM2 board
+b73ce7f38d2af74bb41d77a05bdcc1a84c776ab7 698b1bc8326ed2f5e6b1ca07c4689ccd64d5cdbf pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174155-2 i.mx6sdl: enable i.mx6solo config by default
+698b1bc8326ed2f5e6b1ca07c4689ccd64d5cdbf 0a79df108925eba588c579669ad40f4778670d90 pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174155-3 i.mx6sdl: enable i.mx6solo config by default
+0a79df108925eba588c579669ad40f4778670d90 fd64c952c661c1c3b9eabd1ce5befc8e571ba590 pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174221 imx6dl remove unnecessary configs for NAND
+fd64c952c661c1c3b9eabd1ce5befc8e571ba590 738d02861a178087c0e15cf3b77c8b48d207a9b5 pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174104-1: Add conditional CONFIG to fix build break
+738d02861a178087c0e15cf3b77c8b48d207a9b5 66d71268d23ad1a0fb682d73a8ee23b0810e0874 pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174104-2: Add mx6dl iram boot config
+66d71268d23ad1a0fb682d73a8ee23b0810e0874 58776e1ee4fa6b6d18b4ad7ba963fbc895c002d5 pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174104-3: Fix mx6 iram boot configs' issue
+58776e1ee4fa6b6d18b4ad7ba963fbc895c002d5 03b514e9c4b1017561d1c37e170f059f1ca4fa1c pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174104-4: Fix iram build error in imx6
+03b514e9c4b1017561d1c37e170f059f1ca4fa1c 4bfbcef02195bb2fa867d365c961660f060a8bf2 pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174230: Move partition command from nand to sata in mx6
+4bfbcef02195bb2fa867d365c961660f060a8bf2 3d544a1cc26a6c04e46232a00f2cc75b541fa9b1 pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174407 imx6dl: add MFG tool support
+3d544a1cc26a6c04e46232a00f2cc75b541fa9b1 9a31a6f9a6fe3e2ca8d4ceabf46fbf472c705ee0 pinki <pinki.saharan@vvdntech.com> 1377487048 +0530	am: ENGR00174326 MX6Q_SABRESD: add android related function and config.
+9a31a6f9a6fe3e2ca8d4ceabf46fbf472c705ee0 81c5e96fb2d3fcfe6ee913d49e609d6790698356 pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00139213: Add read and change voltage support for mx6
+81c5e96fb2d3fcfe6ee913d49e609d6790698356 609881a0ba866edc47db7c9a7c090178e06779d1 pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00174626: Fix cmd_regul build error
+609881a0ba866edc47db7c9a7c090178e06779d1 cf62a3d464b3054d7e4ad6f25ba59d92e7c371a3 pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00174625: Remove build warnings for mx6q
+cf62a3d464b3054d7e4ad6f25ba59d92e7c371a3 acfbc1b68ba512aba30005d3f1cb6c0779f643cd pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00174536-1 booti: add booti command support.
+acfbc1b68ba512aba30005d3f1cb6c0779f643cd 776f6be50277cd3828ed8e6923e68e6e430e0f33 pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00174536-2 MX6Q_SABRE[SD/Lite]: change bootcmd to booti
+776f6be50277cd3828ed8e6923e68e6e430e0f33 1f5f98ca38db6a27a41a46c8c71064a3016b143d pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00174821 booti: fix build error when not configure android partition.
+1f5f98ca38db6a27a41a46c8c71064a3016b143d 481e20e16d8ac09ec35ab2010cf023d4759424dc pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00174841 [U-Boot]Add a command to erase any pre-saved environment
+481e20e16d8ac09ec35ab2010cf023d4759424dc 50edb3c47aeded25b2450d7708e8c541748d9ef7 pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00174868 mx6dl arm2: change the default console as ttymxc3
+50edb3c47aeded25b2450d7708e8c541748d9ef7 87a7b0029da356059127c4e98118b1c1325a3749 pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00175091 MX6Q_SABRESD: android: add recovery check
+87a7b0029da356059127c4e98118b1c1325a3749 be4ed6421348e2f027e2c34eece844fe5e0b5d96 pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00175117 [MX6DL LPDDR2 Board] Apply Initializtion script and enable U-Boot
+be4ed6421348e2f027e2c34eece844fe5e0b5d96 f09d83a4901f9c8145f03944e97646e777b3e7e5 pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00175981-1 mx53 smd: add CPU 1.2GHz configuration
+f09d83a4901f9c8145f03944e97646e777b3e7e5 df083665072cbca56deb5ee2b7950258bda80b43 pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00175981-2 mx53 smd android: fix build error
+df083665072cbca56deb5ee2b7950258bda80b43 7c3af72c4bf70e463696b437e35162bc9636a2cb pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00176186 mx6dq ARD: add MFG tool support
+7c3af72c4bf70e463696b437e35162bc9636a2cb 598a7f30c96ddc94c4047ce4c9b7f0de3de2c1aa pinki <pinki.saharan@vvdntech.com> 1377487049 +0530	am: ENGR00176235 mx6 ARD: Add splash screen support
+598a7f30c96ddc94c4047ce4c9b7f0de3de2c1aa 15ae4f72a9248297e79a00d9797f8c49bc183dca pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00176328 change fastboot vid to google orignal
+15ae4f72a9248297e79a00d9797f8c49bc183dca 3918ffbf1435fc63c54548796e4541712f954988 pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00176347-1 mx6solo sabreauto: add configuration support
+3918ffbf1435fc63c54548796e4541712f954988 ce88e19780a26a639a97f08cb93426a3581aafe6 pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00176347-2 mx6solo sabreauto: add DDR3 support
+ce88e19780a26a639a97f08cb93426a3581aafe6 807a778dc74fbbee3a223a947bdf737293afeed4 pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00176347-3 mx6solo sabreauto: add board support
+807a778dc74fbbee3a223a947bdf737293afeed4 a310a6507aaa18e28fbb8b621d4faad92d8d399c pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00176347-4 anatop: add support for mx6solo/dl
+a310a6507aaa18e28fbb8b621d4faad92d8d399c d3d883f336555f29fa9cc5a04c98dd6b55b37263 pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00176347-5 mx6solo sabreauto: set system_rev
+d3d883f336555f29fa9cc5a04c98dd6b55b37263 d600f766372d7d7b443a8ca2c565ab2c05fe2859 pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00176347-6 mx6solo sabreauto: remove build warning
+d600f766372d7d7b443a8ca2c565ab2c05fe2859 e5f684d4b239a2cf26cea6318bcd7251b694e1af pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00176347-7 bootm: remove build warning
+e5f684d4b239a2cf26cea6318bcd7251b694e1af c400f0605e2999130d8834c590034d47819e755e pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00176347-8 cmd_bootm: remove build warning
+c400f0605e2999130d8834c590034d47819e755e 96a65cc36b29f9ab39f0443f0ab0a381ed551013 pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00176347-9 fec : increase wait time for phy link
+96a65cc36b29f9ab39f0443f0ab0a381ed551013 b578c6f2084413d4162a17cb5e3e1255f71f5ce7 pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00177070 android: isolate booti command to fix build.
+b578c6f2084413d4162a17cb5e3e1255f71f5ce7 40f46a6563c45b0cc747944dceab58549f113f9b pinki <pinki.saharan@vvdntech.com> 1377487050 +0530	am: ENGR00176834-1 - [imx6] : add fsl_system_rev to check chip and board.
+40f46a6563c45b0cc747944dceab58549f113f9b d5c6d2d57b3c0d485023bfcf5543d0389fc0cc84 pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00176834-2 - i.MX6DL sabresd: board bringup
+d5c6d2d57b3c0d485023bfcf5543d0389fc0cc84 e4ecd57ff339254d2392b93f928153898c49adee pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00176834-3 - i.MX6DL sabresd : DDR init script update
+e4ecd57ff339254d2392b93f928153898c49adee a2657dc1890c151acfa6aea63791d40c56c0c3c9 pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00177244 - imx6 : Use common fsl_sys_rev to check board reversion
+a2657dc1890c151acfa6aea63791d40c56c0c3c9 71d65b991d66233aa2c75c4afcd73ca3778a42ed pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00177587 MX6Q_ARM2: add android config for this board.
+71d65b991d66233aa2c75c4afcd73ca3778a42ed 3323fad8b098f23c51c8bcf77ec700829d5a14ad pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00176837-1 - imx6 sabreauto : add net support for revb boards.
+3323fad8b098f23c51c8bcf77ec700829d5a14ad f0ebb46a0e7f782c13a168301186b56e636d9660 pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00176837-2 - imx6 sabreauto : add i2c3 support for revb board.
+f0ebb46a0e7f782c13a168301186b56e636d9660 98cbb5c00215d5ebcfc8b80989dccf624b2bcce4 pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00176837-3 - FEC : detect phy ID to match the phy type.
+98cbb5c00215d5ebcfc8b80989dccf624b2bcce4 061254c655ca65b4306d7f7f9283d0df2b887f13 pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00176837-4 - imx6solo sabreauto : remove Ethernet phy MICREL macro.
+061254c655ca65b4306d7f7f9283d0df2b887f13 a413e9e22574324a3ea847c4e07632cc654956a4 pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00177657: Add mfg configs for mx6dl sabresd and mx6solo sabreauto
+a413e9e22574324a3ea847c4e07632cc654956a4 933fe93d48667da4e43921c2cc3dc066afc7bd34 pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00177783: i.mx6dl: sabresd revB: update DD3 init script
+933fe93d48667da4e43921c2cc3dc066afc7bd34 fe0d703f65ce044d0f4fc9496cad2824b14aec9f pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00177905 : i.mx6q sabresd: add fec auto discover phy configuration.
+fe0d703f65ce044d0f4fc9496cad2824b14aec9f 3d23d87fee818814eb19451ce1172b0cde4e0afc pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00177909: mx6q/mx6dl SabreSD: SPI-NOR flash not probed as expected
+3d23d87fee818814eb19451ce1172b0cde4e0afc e2d92ccd8b9a5dccdba4f6e81c4e25f69ec1430a pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: ENGR00177954 mx6solo sabreauto: remove MMDC1 setting
+e2d92ccd8b9a5dccdba4f6e81c4e25f69ec1430a ef199358d8998c54b46afc69b375f4e780c21f8d pinki <pinki.saharan@vvdntech.com> 1377487051 +0530	am: mmc: CMD7:MMC_CMD_SELECT_CARD response fix
+ef199358d8998c54b46afc69b375f4e780c21f8d a9824c26ceadd0afd2934fc4f96069e8630d1b22 pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00178547 i.mx6dl sabresd: add android config file
+a9824c26ceadd0afd2934fc4f96069e8630d1b22 030070f13bdeebadec7c93a779151f7ceae902f5 pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00178024 mx6solo sabreauto: add nosmp arm_freq=800 by default
+030070f13bdeebadec7c93a779151f7ceae902f5 414998d272476a5019c12b947e8399b50c829d20 pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00178558 mx6solo sabreauto: integrate DDR3 script V1.1
+414998d272476a5019c12b947e8399b50c829d20 756861c11a411590dc4e824f14786e62ed4d0a61 pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00176834-4 - [imx]:add macro define to include chip head file
+756861c11a411590dc4e824f14786e62ed4d0a61 eb2f106585214debac391a39fc1c7b9ecdfd78ea pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00176837-4 - FEC:enable some macro define for all chip
+eb2f106585214debac391a39fc1c7b9ecdfd78ea e5c8124e23bcbe3930060c99c761309d168b23ab pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00139223-1 [MX6Q] Secure Boot, enable HAB on ARM2 platform (Stage 1)
+e5c8124e23bcbe3930060c99c761309d168b23ab eb0966ff2a6938ad9407ea710cd68e22d1472431 pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00139223-2 [MX6Q] Secure Boot, enable HAB on ARM2 platform (Stage 2)
+eb0966ff2a6938ad9407ea710cd68e22d1472431 137dba08dbb073c12f8000cf2eeb489b37c4c5c7 pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00178989: Disable secrity boot configs.
+137dba08dbb073c12f8000cf2eeb489b37c4c5c7 9e1ca9089bc1f298544a4fafe20b656e3d6f00b8 pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00176537 mx6qsabreauto: i2c3_sda route setting
+9e1ca9089bc1f298544a4fafe20b656e3d6f00b8 6da8dad93e944003ed8719f6b14fdd7a28c4286d pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00179150 MX6Q_ARM2 HAB Boot : avoid uImage authentication on un-fused chip
+6da8dad93e944003ed8719f6b14fdd7a28c4286d d89722d8acd870ba3e9112828df31c543be3da93 pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00179437-1: u-boot: iomux: NO_PAD_I/NO_PAD_MUX not set corretly
+d89722d8acd870ba3e9112828df31c543be3da93 4ff3ffbdc6972d2def2b419b981055d52cecc947 pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00179437-2 u-boot: mx6q: iomux: code clean up
+4ff3ffbdc6972d2def2b419b981055d52cecc947 3c69750baff05a666450ff7dd18592495f56079e pinki <pinki.saharan@vvdntech.com> 1377487052 +0530	am: ENGR00179000 i.mx6q/dl: sabresd: Add the splash screen support
+3c69750baff05a666450ff7dd18592495f56079e a0c43554ed7f3d3903ea54780ce939aa7d0fb399 pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: ENGR00179013 : MX6Solo/Quad : SABREAUTO: Add Parallel NOR Support
+a0c43554ed7f3d3903ea54780ce939aa7d0fb399 2333f2f2f5173bfd10c42edf63ab65b6b4ca9a5d pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: ENGR00179762: i.MX6: print the SOC revision correctly
+2333f2f2f5173bfd10c42edf63ab65b6b4ca9a5d 9d11e39c2dd41247853e9af9b80d2df7e1b8592c pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: MX: Added Freescale Power Management Driver
+9d11e39c2dd41247853e9af9b80d2df7e1b8592c 96e23f6ac330b8de358bbaaee55a72677d47efce pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: misc:pmic:core New generic PMIC driver
+96e23f6ac330b8de358bbaaee55a72677d47efce e8485f3756715d1a29a89b1d54aefad3fd3f6ae3 pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: misc: pmic: use I2C_SET_BUS in pmic I2C
+e8485f3756715d1a29a89b1d54aefad3fd3f6ae3 af0d5175b2fcab4ffe34440d2deb9ed5881f7057 pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: misc: pmic: addI2C support to pmic_fsl driver
+af0d5175b2fcab4ffe34440d2deb9ed5881f7057 2cd5e4fbdc160d87c8373c965676e904a27a72c0 pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: misc: pmic: fix regression in pmic_fsl.c (SPI)
+2cd5e4fbdc160d87c8373c965676e904a27a72c0 0aec865c4c73168cf017f5df305310db7772be49 pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: Add generic gpio.h in asm-generic
+0aec865c4c73168cf017f5df305310db7772be49 8c225f522ce4f3c7d5064f058a637b184350e94e pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: IMX: uniform GPIO interface using GPIO framework
+8c225f522ce4f3c7d5064f058a637b184350e94e 2498fe74c3898cae3f890542fb74924fce0a86c9 pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: MX: Added definition file for MC13892
+2498fe74c3898cae3f890542fb74924fce0a86c9 3c817323d1b9112010b2ddc6538dcbcb471efa81 pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: ENGR00180623 fastboot: add fastboot in MX6Q_SABERSD boards
+3c817323d1b9112010b2ddc6538dcbcb471efa81 95df06a223d07b1dbefbcb747b7fc12401e5d18d pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: ENGR00180955 mx6q sabresd snvs TKT104835: fix long press ONOFF failed in u-boot
+95df06a223d07b1dbefbcb747b7fc12401e5d18d 7203b73c569d2cba6be10d4972e337036ac46c2f pinki <pinki.saharan@vvdntech.com> 1377487053 +0530	am: ENGR00181337-1 i.mx6 : add initial support for i.mx6sl
+7203b73c569d2cba6be10d4972e337036ac46c2f 23490a39f5fff896e81ca94bb65d1c9246149215 pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00181337-2 i.mx6 : i.mx6sl arm2 add EPDC support
+23490a39f5fff896e81ca94bb65d1c9246149215 c298e5a6a2af5062755c809aef1f6ddcb6fcc812 pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00181337-3 i.mx6: i.mx6sl: add initial support for i.mx6sl ARM2 board
+c298e5a6a2af5062755c809aef1f6ddcb6fcc812 8c20a559977ceff0bdc4e951a10ab2fa32fee961 pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00181337-4 i.mx6 : i.mx6sl: Fix FEC RX CRC Error
+8c20a559977ceff0bdc4e951a10ab2fa32fee961 1a120920a5b8562317cddb44fbf1f4bf60c91f5a pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00181621 : MX6Solo SABREAI - Set default boot up to SD Card
+1a120920a5b8562317cddb44fbf1f4bf60c91f5a 9575cc54378d5eedca9ad4b12f18f82d7e0ed435 pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00181348 pfuze sabresd: pfuze support in u-boot
+9575cc54378d5eedca9ad4b12f18f82d7e0ed435 b1d807ce8b01d0d95a85ce7808da1c27c2b795db pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00182017 mx6dl sabresd I2C: fix build error and support mx6dl_sabresd
+b1d807ce8b01d0d95a85ce7808da1c27c2b795db eaeddcf98039e3d7e1a84410a5bd31246db82442 pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00182426 MX6DL: add fastboot support for MX6DL.
+eaeddcf98039e3d7e1a84410a5bd31246db82442 adca42b95c0f46599f6b432a9c6bef85f5afe303 pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00182739 sabresd I2C:add i2c recovery function in board_lateinit
+adca42b95c0f46599f6b432a9c6bef85f5afe303 808f7be73e620f84375fca90ceb588244b5def51 pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00182459 fastboot: change vid pid to align with winXP fastboot driver.
+808f7be73e620f84375fca90ceb588244b5def51 5017ce54a04ab025773df247b17c9b64dfc61503 pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00209059 android: refine fastboot and recovery support.
+5017ce54a04ab025773df247b17c9b64dfc61503 6f95273ed2f565d0f3e372f0c88814266cffac3e pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00209306 i.mx6:i.mx6sl: fixup the load address for i.mx6sl uImage
+6f95273ed2f565d0f3e372f0c88814266cffac3e 27d9bdf77067a9818153b9ba94b4e6108d6a40f6 pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00180103 MX6 sabreauto: Adjust IPU AXI-id0/1 Qos value
+27d9bdf77067a9818153b9ba94b4e6108d6a40f6 b7e6784948a176c054bb92a5e6b0809c1e65b9a0 pinki <pinki.saharan@vvdntech.com> 1377487054 +0530	am: ENGR00210014 i.mx6 : i.mx6sl : add PAD_CTL_LVE support for pad configuration
+b7e6784948a176c054bb92a5e6b0809c1e65b9a0 624b5c6e5b7cf4128b240ecefa2a4f4879abdb61 pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00209899-1 mx6x: add generic gpio interface.
+624b5c6e5b7cf4128b240ecefa2a4f4879abdb61 018aa8b3108f9f325e6e4af6f34cefdeed30ce30 pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00209899-2 MX6Q: cleanup: cleanup fastboot, udc warnning.
+018aa8b3108f9f325e6e4af6f34cefdeed30ce30 9765bbd9986d6872f4d087f9da791c8a700c13b0 pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00209910 Add support for MX6SL mfgtools firmware support
+9765bbd9986d6872f4d087f9da791c8a700c13b0 97e58c43fc3156d330d331166d222d4d62f944cb pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00210918-1 android: add mx6sl android support
+97e58c43fc3156d330d331166d222d4d62f944cb d8adefa74e8521565beb92ef79ad68d6ef5bcaba pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00210918-2 cleanup android support, build pass all boards
+d8adefa74e8521565beb92ef79ad68d6ef5bcaba f9209e1f85149e12dc220592bd830b622d0eaa27 pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00211038 Fix the PAD_LVE implementation
+f9209e1f85149e12dc220592bd830b622d0eaa27 cf5305bed4d9e991fcdf9e10f5e691462986e29f pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00211117 - U-Boot: Add EPDC splash screen for MX 6DL/S platforms
+cf5305bed4d9e991fcdf9e10f5e691462986e29f 411f58c4c947a6031bf2a1dc4b511c6f78bb1827 pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00212287 - U-Boot EPDC splash screen: Disable EPDC splash by default
+411f58c4c947a6031bf2a1dc4b511c6f78bb1827 cf8b399c6e7beb3013364af8fb591a2ddc80515e pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00212571 [MX6]Change DRAM ODT setting to save power
+cf8b399c6e7beb3013364af8fb591a2ddc80515e 101f05cf897f7ca5e7a15b8bfa98f728f89c9891 pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00212229 [MX6SL_ARM2]uboot: 8bit MMC cards failed to boot on SD1.
+101f05cf897f7ca5e7a15b8bfa98f728f89c9891 5c2a82a84954b6a14ff49f92ae0c4a7c0c5960e7 pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00213689 - U-Boot: EPDC Splash Screen failing for MX 6DL/S
+5c2a82a84954b6a14ff49f92ae0c4a7c0c5960e7 44675635371ce245a9ff6528d2410354e8096228 pinki <pinki.saharan@vvdntech.com> 1377487055 +0530	am: ENGR00214866 MX6SL ARM2, UBoot : Apply V0.91 LPDDR2 Script
+44675635371ce245a9ff6528d2410354e8096228 0935a2dbf0204082506a6cb7022332f52cd9bb14 pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00214947 MX6 UBOOT : default enable wait mode as default parameters
+0935a2dbf0204082506a6cb7022332f52cd9bb14 8a8dbf1d63dd99668088ebe06400217c8e2aebbb pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00215515 MX6: Move IPU QoS and VDOA/IPU/VPU AXI Cache config to kernel
+8a8dbf1d63dd99668088ebe06400217c8e2aebbb 1d498684e0bbdf913fe761d364c98c25901bb3b7 pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00215633 MX6DL LPDDR2 : enable plugin mode of system boot
+1d498684e0bbdf913fe761d364c98c25901bb3b7 913b67dcd6e0d8de7962170d02666447b351d675 pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00215367 MX6 Platforms, remove "nosmp" in default parameters
+913b67dcd6e0d8de7962170d02666447b351d675 75f94c6cdfd6dfa48bd3c54b9f282e95b71d58ec pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00215197 pfuze MX6SL_ARM2: enable LDO bypass on u-boot
+75f94c6cdfd6dfa48bd3c54b9f282e95b71d58ec c7c7db77584f1eef010ce0dd74eb57df9a95b217 pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00216852 MX6SL ARM2, UBoot : Apply V0.93 LPDDR2 Script
+c7c7db77584f1eef010ce0dd74eb57df9a95b217 81b5b1152abba32494142106e43129c46b7b4e0b pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00217114-1 MX6 U-Boot, Secure Boot, one code base for MX6Q/DL/SL
+81b5b1152abba32494142106e43129c46b7b4e0b 16be68f7a654f3984891b21b0fb7a67fb9cdc1c8 pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00217114-2 MX6 U-Boot, Secure Boot, one code base for MX6Q/DL/SL
+16be68f7a654f3984891b21b0fb7a67fb9cdc1c8 69ef01762d1860d608229ebecd58d498f90627c9 pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00217381-01: mx6sl add sd1 and sd2 to support SD3.0
+69ef01762d1860d608229ebecd58d498f90627c9 6ea6236446185a4bb57b20916592ded3a79fe143 pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00217381-02: show sd/mmc clk freq for mmcinfo
+6ea6236446185a4bb57b20916592ded3a79fe143 a7686c617ce32cd350fce6df85a35faab17d144e pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00217764 MX6 Secure Boot : Fix NAND BOOT Failure due to secure patch
+a7686c617ce32cd350fce6df85a35faab17d144e 16cc5dc5caa3ef42ad7818e28637900b27ccdfb6 pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00218067 mx6sl LDO_BYPASS: enable LDO BYPASS in mx6sl by default
+16cc5dc5caa3ef42ad7818e28637900b27ccdfb6 ed8662a0ca1ad0c5e0dbebd94b9022976a898bc3 pinki <pinki.saharan@vvdntech.com> 1377487056 +0530	am: ENGR00218282 MX6Q: fix linker error when more configure enabled.
+ed8662a0ca1ad0c5e0dbebd94b9022976a898bc3 0436fafe07ad348477c3ca793f0a0f431cc51340 pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00217401 common: fix build warning
+0436fafe07ad348477c3ca793f0a0f431cc51340 d4631bff7fb09a772b96ac12b2e8b220f46007c8 pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00218465 Android: mx6sl-arm2: fix fastboot crash issue
+d4631bff7fb09a772b96ac12b2e8b220f46007c8 eeaabfc6c53fc71625f06fcc8fb344fe18aed3eb pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00218805 imx6: print the silicon revision correctly
+eeaabfc6c53fc71625f06fcc8fb344fe18aed3eb d91e94491f33a7a35b116c8a1d0822799f28e03a pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00218583-1 MX6Q/DL SabreSD:Support LVDS1 splashimage
+d91e94491f33a7a35b116c8a1d0822799f28e03a 1f4d632c98b37c6fde04ef5f7883ed3d44b1812a pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00218583-2 MX6Q SabreSD:Enable splashimage by default
+1f4d632c98b37c6fde04ef5f7883ed3d44b1812a 862ba17b8d535b5726d80b52dd77b9068905ebb2 pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00218583-3 MX6DL SabreSD:Enable splashimage by default
+862ba17b8d535b5726d80b52dd77b9068905ebb2 2eac5c731ff4ec75ab6430b57e38b1a89846c826 pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00218583-4 MX6Q SabreSD Android:Add splashimage uboot var
+2eac5c731ff4ec75ab6430b57e38b1a89846c826 09bf9ca7d5ee993fa6df178f2d31acea905415a6 pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00218583-5 MX6DL SabreSD Android:Add splashimage uboot var
+09bf9ca7d5ee993fa6df178f2d31acea905415a6 ce613b0e0bd0e91e4ad78360df0cb01ab116d760 pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00218972 MX6 Secure Boot, Change to dynamic HAB data authentication
+ce613b0e0bd0e91e4ad78360df0cb01ab116d760 d229412f4713db81c8355cd2ea03e5f18116596c pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00218915-1 FSL common:Add new boot logo
+d229412f4713db81c8355cd2ea03e5f18116596c 8579cfdf253a37cae509038edf71b3103b753e36 pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00218915-2 MX6 SabreSD:Use new 8bit bmp boot logo
+8579cfdf253a37cae509038edf71b3103b753e36 005e09789d6756118fa4c63032373da16f565f9a pinki <pinki.saharan@vvdntech.com> 1377487057 +0530	am: ENGR00219636 MX6 UBOOT : Enlarge command line buffer size
+005e09789d6756118fa4c63032373da16f565f9a 8d3233a7870d85cb167c4cfa1d323d73396a3229 pinki <pinki.saharan@vvdntech.com> 1377487058 +0530	am: ENGR00219854-1 Enable fastboot feature on mx6q-arm2 board
+8d3233a7870d85cb167c4cfa1d323d73396a3229 06060f435a1bcfb46f78ce7f3f56f729f4fb76ea pinki <pinki.saharan@vvdntech.com> 1377487058 +0530	am: ENGR00220076 fix the fastboot usb re-connect issue
+06060f435a1bcfb46f78ce7f3f56f729f4fb76ea dc76123e23485838cd87c7fc59e55d84a597d683 pinki <pinki.saharan@vvdntech.com> 1377487058 +0530	am: ENGR00220164 pfuze:rise VDDARM_IN to 1.425V and work around pfuze1.0
+dc76123e23485838cd87c7fc59e55d84a597d683 dd971b486134712783e8b4551fbda7526d44e1d3 pinki <pinki.saharan@vvdntech.com> 1377487058 +0530	am: ENGR00220161: imx6sl: Add MX6SL EVK Support
+dd971b486134712783e8b4551fbda7526d44e1d3 d94906d1199a0ab75d0bf10b275f1f38bba2b496 pinki <pinki.saharan@vvdntech.com> 1377487058 +0530	am: ENGR00220486 Modify ODT values for Solo AI
+d94906d1199a0ab75d0bf10b275f1f38bba2b496 9a9f39b620d289bf838cd468fbf76ea2fb225386 pinki <pinki.saharan@vvdntech.com> 1377487058 +0530	am: ENGR00217505-1 uboot: MX6Q-ARD: add a NAND boot config
+9a9f39b620d289bf838cd468fbf76ea2fb225386 313d860565275922dc8f3037e812fa5a609395cf pinki <pinki.saharan@vvdntech.com> 1377487058 +0530	am: ENGR00217505-2 uboot: mtd: update nand_get_flash_type()
+313d860565275922dc8f3037e812fa5a609395cf 77196f24efcacd36be2700eb92eb3ce5f9afbf7d pinki <pinki.saharan@vvdntech.com> 1377487058 +0530	am: ENGR00217505-3 uboot: gpmi: use the community's nand chip database
+77196f24efcacd36be2700eb92eb3ce5f9afbf7d a4c47bd5811e9d2dd68f9c4cd67e63cbba5f1acf pinki <pinki.saharan@vvdntech.com> 1377487058 +0530	am: ENGR00217505-4 uboot: gpmi: replace the gpmi_nfc_reset_block()
+a4c47bd5811e9d2dd68f9c4cd67e63cbba5f1acf 6033b46298fb4509705d7b0503f51bf1b1fc4c51 pinki <pinki.saharan@vvdntech.com> 1377487058 +0530	am: ENGR00217505-5 uboot: gpmi: update the ecc_strength code
+6033b46298fb4509705d7b0503f51bf1b1fc4c51 e5655fdc93ff397d5f3c6ad869728e0bcf4c5f0a pinki <pinki.saharan@vvdntech.com> 1377487058 +0530	am: ENGR00217505-6 uboot: gpmi: set default value for busy_timeout
+e5655fdc93ff397d5f3c6ad869728e0bcf4c5f0a dd6d7a94312f08c319d36fd0324ef78e9ce8a16a pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00217505-7 uboot: gpmi: update the mtd->ecc_stats when reading page failed
+dd6d7a94312f08c319d36fd0324ef78e9ce8a16a 97337b0e7f1e893719545ec085e26fd0ab05398c pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00217505-8 uboot: MX6Q-ARD: set the default gpmi clock to 20MHz
+97337b0e7f1e893719545ec085e26fd0ab05398c f68c2f70a5eda0d096306621bcc48a1e864ae2e4 pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00180538-1 MFG download burn sd,spi, nand, nor failed.
+f68c2f70a5eda0d096306621bcc48a1e864ae2e4 d3d53e82e424b62892230f6d29a35ccf7f2c526a pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00220824: mx6sl_evk: mmc: only SD1 supports 8bit on evk board.
+d3d53e82e424b62892230f6d29a35ccf7f2c526a 7b01008dacba18980d3aa220b6c7045019ae5b46 pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00221150 Support spi-nor on manufacturing tool
+7b01008dacba18980d3aa220b6c7045019ae5b46 c82db09de75e5fda39d9ae0fc3623860b4ab05f2 pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00221135: imx6x: clear PowerDown Enable bit of WDOG1_WMCR
+c82db09de75e5fda39d9ae0fc3623860b4ab05f2 debe107745039efe72d627b598593d697618e108 pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00221332: U_BOOT: remove "boot" and "enable" from configs' name
+debe107745039efe72d627b598593d697618e108 67a0a311f3fe76fe6d3105c1d5f478af70ac3991 pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00221013 MX6 SabreSD:Disable LVDS panel CABC function
+67a0a311f3fe76fe6d3105c1d5f478af70ac3991 d683b136bc869c3dd6170ca259cffd7e3d5d5180 pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00219316-1: mx6 sabreauto: enable mxc_gpio support
+d683b136bc869c3dd6170ca259cffd7e3d5d5180 c355627676f7cb54a15166f4e536319c29ec852c pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00219316-2: mx6q sabreauto enable lvds backlight by default
+c355627676f7cb54a15166f4e536319c29ec852c d079999732f0fc4c335cf937ca8acc6ef32a5d19 pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00222005 mfgtool can't work on mx6sl
+d079999732f0fc4c335cf937ca8acc6ef32a5d19 03c31c1b31a3939ea5ce81ee319144035c6e6d8c pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00221503-1 cmd_imxotp: refine the help of this command.
+03c31c1b31a3939ea5ce81ee319144035c6e6d8c 613ae435c347db3a1eb418a0c6e061eac24de89d pinki <pinki.saharan@vvdntech.com> 1377487059 +0530	am: ENGR00221503-2 imx6: add cpu serial number support.
+613ae435c347db3a1eb418a0c6e061eac24de89d 90e9a27d79f5dfb5c52d5e2ec5a7caece1a34af0 pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00222170: Add mx6sl_evk_android_config for mx6sl evk board
+90e9a27d79f5dfb5c52d5e2ec5a7caece1a34af0 a46d1ab8a5f264c0578b0205fa8a0986703496ed pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00223236-1 [MX6]Change the temperature range to -40C ~ 125C
+a46d1ab8a5f264c0578b0205fa8a0986703496ed 9ef399b4b011cfb474b37cda36ef6ebfe32a0c87 pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00223027 Add support for nand on MFG for IMX6Q
+9ef399b4b011cfb474b37cda36ef6ebfe32a0c87 81edb006a91422ce72ed00df3e3d18a2fa080fa7 pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00223788 mx6sl_evk: change boot args to boot from mmc/sd
+81edb006a91422ce72ed00df3e3d18a2fa080fa7 292713101cd67eebe183fd1cc2b5279fec2ff9cc pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00224272: MFG:i.mx6q/ARM2 enable CONFIG_CMD_IMXOTP to fix the build error
+292713101cd67eebe183fd1cc2b5279fec2ff9cc eefdd61140bfac02cec3c52a7d01085ad25d1b87 pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00224291:i.MX6Q/ARM2-LPDDR2:enable CONFIG_CMD_IMXOTP to fix the build error
+eefdd61140bfac02cec3c52a7d01085ad25d1b87 aecdbcc38c7100f5c982ac92333175b1da95d47f pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00224313:i.MX6 general:enable CONFIG_CMD_IMXOTP to fix the build error
+aecdbcc38c7100f5c982ac92333175b1da95d47f 4ea9507fbc09faae3170e668d1424ea87198fb34 pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00225486 Support for spi-nor boot
+4ea9507fbc09faae3170e668d1424ea87198fb34 f4471747800814989d3c702d2166088aab390f9d pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00225691 NAND support on i.MX6Solo ARD
+f4471747800814989d3c702d2166088aab390f9d 6c5013a047ab3a3c8902baed58d5000a81f01868 pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00226048 Fix weim nor for mfg tool
+6c5013a047ab3a3c8902baed58d5000a81f01868 ac749855c9aabf215f58d1c9f40291307c246705 pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00223794 MX6 SabreSD:Enable LVDS panel pwm backlight
+ac749855c9aabf215f58d1c9f40291307c246705 fce17bc5fd5b0b5879b507dc948d0b64850f370f pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00223797-1 MX6 SabreSD:Align IPU related clocks with kernel
+fce17bc5fd5b0b5879b507dc948d0b64850f370f 7c2473341dc3b7af871c52d1d0f88dc64690b26b pinki <pinki.saharan@vvdntech.com> 1377487060 +0530	am: ENGR00223797-2 MX6Q/DL CPU:Do not disable IPU display channel
+7c2473341dc3b7af871c52d1d0f88dc64690b26b 1a0d684c04e9df80a2effc2db9c3f6e090041666 pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00223797-3 IPUv3:Wait for sw reset finish
+1a0d684c04e9df80a2effc2db9c3f6e090041666 57f7bed3f291b655ba433da1ff960d98abd1df14 pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00228238 i.mx6/i.mx6dl: sabresd: add solo-ddr32bit support
+57f7bed3f291b655ba433da1ff960d98abd1df14 3df995104e1599a56bd44f30c8097ebf445b8220 pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00227413 Change configuration file names on AI
+3df995104e1599a56bd44f30c8097ebf445b8220 00091bcfc3761d4a766b849cc72db955bf5dd1f8 pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00229456 Support for 64bit DDR configuration for ARD
+00091bcfc3761d4a766b849cc72db955bf5dd1f8 2021e4cf58afd0c47b020fe80d9e03bb325355e1 pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00229614 mx6: disable VDDPU by default, xpu will enable it if needed.
+2021e4cf58afd0c47b020fe80d9e03bb325355e1 68693c31987d715540534ed4caf65d4b5d5c3e31 pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00229817: i.mx6dl/mx6solo_sabresd_config: fix the build issue
+68693c31987d715540534ed4caf65d4b5d5c3e31 c2bdbdc6cf12f2c0f64fcfdba1ae1118daafa801 pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00229709 Support 2 processors at Linux boot
+c2bdbdc6cf12f2c0f64fcfdba1ae1118daafa801 339af13137d008354c9d01f95934f1a7d251fa16 pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00229711 Add weim-nor argument on uboot config Quad/DL
+339af13137d008354c9d01f95934f1a7d251fa16 4df62415ce9abe9b29036e351bf0fc015582e3a3 pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00229789 AHCI Disable SATA PHY in initialization
+4df62415ce9abe9b29036e351bf0fc015582e3a3 be85bd8820e6f863eab2bcde4832eb30a15ec30d pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00229931 Support for Solo configuration on ARD platform
+be85bd8820e6f863eab2bcde4832eb30a15ec30d 29ca325ac712cfb4da858f5a8d64298fbabff073 pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00230334: Fix the mx53_smd_android config
+29ca325ac712cfb4da858f5a8d64298fbabff073 be9dc2c30a8538ee75525b1b7b41147e6558525a pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00230104 mx6q_sabreauto_nand: fix fec phy address
+be9dc2c30a8538ee75525b1b7b41147e6558525a 7704f939e370570df9e0756bbeda51067cda5e26 pinki <pinki.saharan@vvdntech.com> 1377487061 +0530	am: ENGR00230391: Fix build fail issue of sata
+7704f939e370570df9e0756bbeda51067cda5e26 a39b32983e74294a603194318255e66e50a19947 pinki <pinki.saharan@vvdntech.com> 1377487062 +0530	am: ENGR00231155 add enable_wait_mode=off for all the mx6q/dl mfg uboot
+a39b32983e74294a603194318255e66e50a19947 3b7b6fd62ad5a3527ec28702e216f441b7a88c62 pinki <pinki.saharan@vvdntech.com> 1377487062 +0530	am: ENGR00230981-1 pfuze:set all switches to PFM mode in standby
+3b7b6fd62ad5a3527ec28702e216f441b7a88c62 abf5e3f4991e13bc8821f1be925fd27135c0ed48 pinki <pinki.saharan@vvdntech.com> 1377487062 +0530	am: ENGR00231553: MX6SL: Uncovered an issue for I2C parent clock
+abf5e3f4991e13bc8821f1be925fd27135c0ed48 246ae83ab704b6d54b590984e3b282f363864723 pinki <pinki.saharan@vvdntech.com> 1377487062 +0530	am: ENGR00230967 Enable recovery mode by keys when boot
+246ae83ab704b6d54b590984e3b282f363864723 db9004fa4100d51534d6cbcaee6882c1bc388257 pinki <pinki.saharan@vvdntech.com> 1377487062 +0530	am: ENGR00231581 BCH: fix the wrong data size macros in BCH
+db9004fa4100d51534d6cbcaee6882c1bc388257 fa942f6ae24f134c10334d6f275d226c10fbe6ae pinki <pinki.saharan@vvdntech.com> 1377487062 +0530	am: ENGR00231781 fsl common:Align reversed color logo to standard
+fa942f6ae24f134c10334d6f275d226c10fbe6ae 8b417583ba8f2681899ad9b025f0ee75a1dee267 pinki <pinki.saharan@vvdntech.com> 1377487062 +0530	am: ENGR00231891-1 gpmi: replace the hardcode
+8b417583ba8f2681899ad9b025f0ee75a1dee267 319ae90a789b81b33e43a82b5e0bbda92ea93817 pinki <pinki.saharan@vvdntech.com> 1377487062 +0530	am: ENGR00231891-2 gpmi: fix the 4k page size limit
+319ae90a789b81b33e43a82b5e0bbda92ea93817 04e64cc8ff7a08deeb9cebdf2bc2d3cdae5ec1bd pinki <pinki.saharan@vvdntech.com> 1377487062 +0530	am: ENGR002232258 MX6Q-ARM2: add a NAND boot config for uboot
+04e64cc8ff7a08deeb9cebdf2bc2d3cdae5ec1bd f1446a523f34346d50580c8776cfce333309ea5e pinki <pinki.saharan@vvdntech.com> 1377487062 +0530	am: ENGR00230364 - imx6sl: FEC: fix cycle reboot fail in EVK platform for bootp.
+f1446a523f34346d50580c8776cfce333309ea5e 66802d288713737b52e80442b4b0dc4efb747b72 pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00232682 mx6sl snvs: fix long press ONOFF failed issue in u-boot
+66802d288713737b52e80442b4b0dc4efb747b72 2414a73313a1cb4e1d01a33598474393830395d7 pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00233307 Need secure/encrypted boot for Widevine support.
+2414a73313a1cb4e1d01a33598474393830395d7 cfe4cafcca640b39db6069a8d050c35bce6c4a3a pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00233730 PFUZE mx6q_sabresd: remove extra increase for PFUZE tolerance
+cfe4cafcca640b39db6069a8d050c35bce6c4a3a 23c951084616529972bd2096189bd501b8020ff6 pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00233716-1: mx6q_sabreauto aling spi-nor environment offsset
+23c951084616529972bd2096189bd501b8020ff6 34a06eed5da9307d2eb23cf33d8277c5203a66dc pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00233716-2: mx6q_sabreauto flash u-boot into spi-nor fails to boot
+34a06eed5da9307d2eb23cf33d8277c5203a66dc a991e0035cb4611a0381a738b56500c016adcdfb pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00233881 Camera mx6q_sabresd:swap VGEN5&VGEN3 to fix camera streaks issue
+a991e0035cb4611a0381a738b56500c016adcdfb 72ff22075b553db9c18e1594c1f6e9b1c15c1b24 pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00233709-1 i.mx6dl/sabreauto: update the DDR script for i.mx6dl AI board:
+72ff22075b553db9c18e1594c1f6e9b1c15c1b24 5965fe6e57f2e70f29b466e084340a8d49e67eb4 pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00233709-2 i.mx6q/sabreauto: update the DDR script for i.mx6q AI board:
+5965fe6e57f2e70f29b466e084340a8d49e67eb4 5a9af47fbd67d60a8c65a504c259a7e923c873e9 pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00233933 i.mx6dl/sabresd: update the DDR script for i.MX6DL sabresd board
+5a9af47fbd67d60a8c65a504c259a7e923c873e9 071d65c8eadf20d99b00df0f008f7d3438fb3b20 pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00233366-5 Anatop PFUZE: move LDO bypass code to kernel
+071d65c8eadf20d99b00df0f008f7d3438fb3b20 b1e427fb4674f3c746388c2960f59e6aa5092c7c pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00234353-1: mx6_sabreauto fix weim-nor boot
+b1e427fb4674f3c746388c2960f59e6aa5092c7c 509c39356a21f32fba4f521aeac98d44a8dc2eca pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00234353-2: mx6q_sabreauto_weimnor fix redundant env offset
+509c39356a21f32fba4f521aeac98d44a8dc2eca c7323b04d1340c5ffb1093fd53bc987be797ad1a pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00234353-3: mx6q_sabreauto remove EIM_A24 nor pads
+c7323b04d1340c5ffb1093fd53bc987be797ad1a 26efa31a09cdf49e2032718d6069de04ae1b5f5f pinki <pinki.saharan@vvdntech.com> 1377487063 +0530	am: ENGR00233928 i.mx6q/sabresd: update the DDR script for i.MX6Q sabresd board
+26efa31a09cdf49e2032718d6069de04ae1b5f5f 52383920156c081ab18414df0bb57e1b55b57530 pinki <pinki.saharan@vvdntech.com> 1377487064 +0530	am: ENGR00233168 - U-Boot fails to boot from eMMC
+52383920156c081ab18414df0bb57e1b55b57530 7fbdb67cbb803d95d96e3a70c81c5f0c4d69cfa0 pinki <pinki.saharan@vvdntech.com> 1377487064 +0530	am: ENGR00223037 fsl: Add new board HDMI dongle for imx6 Q/DL.
+7fbdb67cbb803d95d96e3a70c81c5f0c4d69cfa0 e49c5e5fb44f13f834f7ec0fc2038977afa10726 pinki <pinki.saharan@vvdntech.com> 1377487064 +0530	am: ENGR00235564: i.mx6 u-boot: change plugin to use ROM API table for code jump
+e49c5e5fb44f13f834f7ec0fc2038977afa10726 20162fd099ab5731d12a5efa793a8d4ca6ca5463 pinki <pinki.saharan@vvdntech.com> 1377487064 +0530	am: ENGR000234991 MX6DL/ARD: Two boards met kernel dump during boot up
+20162fd099ab5731d12a5efa793a8d4ca6ca5463 89896140a941e1a2306e8e946f36a985e4fd20f6 pinki <pinki.saharan@vvdntech.com> 1377487064 +0530	am: ENGR00236337: mx6/clock: emi_slow clock rate is not printed out correctly
+89896140a941e1a2306e8e946f36a985e4fd20f6 1b8c1f4501ddca5abe872e3602d50b7b51fe2273 pinki <pinki.saharan@vvdntech.com> 1377487064 +0530	am: ENGR00235817 mx6: use SNVS LPGPR register to store boot mode value.
+1b8c1f4501ddca5abe872e3602d50b7b51fe2273 133ed23f6139db30d9b348ea4abf6852e3b52863 pinki <pinki.saharan@vvdntech.com> 1377487064 +0530	am: ENGR00236620: Add Android fastboot and recovery reboot support
+133ed23f6139db30d9b348ea4abf6852e3b52863 930a915c30827104b93462020042bdfe34ea1f68 pinki <pinki.saharan@vvdntech.com> 1377487064 +0530	am: ENGR00235821 mx6: correct work flow of PFDs
+930a915c30827104b93462020042bdfe34ea1f68 9b8b8dc91626ce1f1e2cebc3fafb91fce197e8d4 pinki <pinki.saharan@vvdntech.com> 1377487064 +0530	am: ENGR00236902: mx6solo_sabresd: update the DDR script for solo-sabresd
+9b8b8dc91626ce1f1e2cebc3fafb91fce197e8d4 c0f8f83d11cbbd692cbe271d4f5faeea132cbc01 pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00236472 Update DDR script of ARD solo emulation
+c0f8f83d11cbbd692cbe271d4f5faeea132cbc01 96a275c4f7d0e4088be4bd44c47ba914890b744b pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00235540 add sabreauto_6q config for android
+96a275c4f7d0e4088be4bd44c47ba914890b744b e09875421da02b637b0d9ac21b7a81d3598fec20 pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00238048: Add support for processor serial ATAG in uboot for iMX53
+e09875421da02b637b0d9ac21b7a81d3598fec20 f6491b0897331580cd32eab5858c9174652ce358 pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00238300: enhance the download speed for fastboot
+f6491b0897331580cd32eab5858c9174652ce358 f6147ada8aea1b8c5305fe6c7b064196383dcbbe pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00238371: mx6solo: sabresd: make system prompt indicate solo config
+f6147ada8aea1b8c5305fe6c7b064196383dcbbe 8af0d70f8c56d0507a19e54b54fb5f4eace02b43 pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00238834: mx6solo: add MFG support for mx6solo sabresd board
+8af0d70f8c56d0507a19e54b54fb5f4eace02b43 43d773983ce90f07a26cb3e3bfdb92b124dd8d6e pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00238363: mx6dl: epdc: remove epdc macro redefinition in config file
+43d773983ce90f07a26cb3e3bfdb92b124dd8d6e 6ac7c89da870e2b1b0891518cedc40c4667e6222 pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00230437: mx6: epdc: EPDC I/O setup after V3p3 is enable
+6ac7c89da870e2b1b0891518cedc40c4667e6222 c9cf4038ace836b302991265fa060a0055f36c04 pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00239366: Add support for nand storage in quick fastboot
+c9cf4038ace836b302991265fa060a0055f36c04 d50b682864bb2bbf8f8eb847ebc83e08c7366366 pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00239607 add nand config for android sabreauto
+d50b682864bb2bbf8f8eb847ebc83e08c7366366 0aac57195f18b2f0e6698d3d4ca35a5239b2e5c4 pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00239610: Enhance the quick fastboot stability
+0aac57195f18b2f0e6698d3d4ca35a5239b2e5c4 30ccf82b87e3a1fac9bb9d0cf67aeda33db033b3 pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00240261 support fastboot for nand boot in sabreauto_android
+30ccf82b87e3a1fac9bb9d0cf67aeda33db033b3 f62f3adc1861a8b10cd6c25942c871b26631cc18 pinki <pinki.saharan@vvdntech.com> 1377487065 +0530	am: ENGR00241595-1 mx6q-sabresd:Enable SATA PHY PDDQ default
+f62f3adc1861a8b10cd6c25942c871b26631cc18 037fd8c8f88266676ad9ed239f4e484199ebdbec pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00241595-2 mx6q-arm2:Enable SATA PHY PDDQ default
+037fd8c8f88266676ad9ed239f4e484199ebdbec 81eb90de93b7737600b91a6c53640bc69d72c03c pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00241595-3 mx6q-sabreauto:Enable SATA PHY PDDQ default
+81eb90de93b7737600b91a6c53640bc69d72c03c 6774a15cedc6203dd0853e72464c1b43d9d0afee pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00241595-4 mx6q-hdmidongle:Enable SATA PHY PDDQ default
+6774a15cedc6203dd0853e72464c1b43d9d0afee 8d9f1180ee8692bfd8648108d848e6a4253fb0b1 pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00242042 MX6DQ/DL: fix boot fail issue on mx6dl boards
+8d9f1180ee8692bfd8648108d848e6a4253fb0b1 199f91b649a385a138e339abe66498e3b19abec0 pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00243038: make get_mmc_env_devno to be a generic function
+199f91b649a385a138e339abe66498e3b19abec0 ca2022fa92045977af125060990636fb26001050 pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00244769-3 [NOR FLASH]-Improve WEIM NOR speed
+ca2022fa92045977af125060990636fb26001050 a099714415329269a068904b8b373f2cb5031963 pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00255481 mx6: Update equation for thermal sensor
+a099714415329269a068904b8b373f2cb5031963 cb629206f65b18c8f3170a76e16674317259006b pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00256543 mx6: Update equation for thermal sensor on i.MX6DL
+cb629206f65b18c8f3170a76e16674317259006b 8c6c62159f9fa454a7e972dce7ad74f1f19027c6 pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00254470-1 mx6q-sd:sata device can't work properly on most boards
+8c6c62159f9fa454a7e972dce7ad74f1f19027c6 77438cf69f7b4718d3c0188c3b2f5088511e559e pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00254470-2 mx6q-arm2:sata device can't work properly on most boards
+77438cf69f7b4718d3c0188c3b2f5088511e559e 2df2eca454c2f598446776606ba0fa27369115c3 pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00254470-3 mx6q-sabreauto:sata device can't work properly on most boards
+2df2eca454c2f598446776606ba0fa27369115c3 6615a57ab44ba8657863dac098edb244abea25a1 pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00254470-4 mx6q-hdmidongle:sata device can't work properly on most boards
+6615a57ab44ba8657863dac098edb244abea25a1 6810af7f5dc34d907c7826790047d7c4d94cfb4f pinki <pinki.saharan@vvdntech.com> 1377487066 +0530	am: ENGR00254091 fastboot: add reboot command for quick fastboot

@@ -1,0 +1,94 @@
+#ifndef _WEB_API_HEADER_H
+#define _WEB_API_HEADER_H
+
+#include <wfps_api_common.h>
+
+/*Web to cfg_mgr and cfg_mge to web opcodes*/
+typedef enum {      
+        CFGM_WEB_SYS_CFG_GET = WEB_CMD_BASE ,
+        CFGM_WEB_SYS_CFG_SET,
+        CFGM_WEB_NW_CFG_GET,
+        CFGM_WEB_NW_CFG_SET,
+        CFGM_WEB_WLAN_CFG_GET,
+        CFGM_WEB_WLAN_CFG_SET,
+        CFGM_WEB_MAC_LIST_GET,
+        CFGM_WEB_SRV_CFG_GET,
+        CFGM_WEB_SRV_CFG_SET,
+	CFGM_WEB_MGT_CFG_SET,
+        CFGM_WEB_NW_STATS_GET,
+        CFGM_WEB_TPROF_CFG_GET,
+        CFGM_WEB_TPROF_CFG_SET,
+	CFGM_WEB_SCAN_LIST_GET,
+	CFGM_WEB_BULBSTATS_CFG_SET,
+	CFGM_WEB_BLINK_CFG_SET,
+	CFGM_WEB_POWER_CFG_GET,
+	CFGM_WEB_BLACK_CFG_GET,
+	CFGM_WEB_POLL_CFG_GET,
+        
+        WEB_CFGM_SYS_CFG_GET,
+        WEB_CFGM_SYS_CFG_SET,
+        WEB_CFGM_NW_CFG_GET,
+        WEB_CFGM_NW_CFG_SET,
+        WEB_CFGM_WLAN_CFG_GET,
+        WEB_CFGM_WLAN_CFG_SET,
+        WEB_CFGM_MAC_LIST_GET,
+        WEB_CFGM_SRV_CFG_GET,
+        WEB_CFGM_SRV_CFG_SET,
+	WEB_CFGM_MGT_CFG_SET,
+        WEB_CFGM_NW_STATS_GET,
+        WEB_CFGM_TPROF_CFG_GET,
+        WEB_CFGM_TPROF_CFG_SET,
+	WEB_CFGM_SCAN_LIST_GET,
+	WEB_CFGM_BULBSTATS_CFG_SET,
+	WEB_CFGM_BLINK_CFG_SET,
+	WEB_CFGM_POWER_CFG_GET,
+	WEB_CFGM_BLACK_CFG_GET,
+	WEB_CFGM_IMAGE_UPGRADE,
+	WEB_CFGM_POLL_CFG_GET,
+}WEB_API_E;
+
+/* MAC_UPLD_MGR to CFG_MGR and CFG_MGR to MAC_UPLD_MGR opcode */
+
+typedef enum {
+	CFGM_MAC_UPLD_SRV_CFG_GET = MAC_UPLD_CMD_BASE,
+
+        MAC_UPLD_CFGM_SRV_CFG_GET
+}MAC_UPLD_E;
+
+typedef enum {
+        CLI_CFGM_TEST = 0,
+        CFGM_CLI_TEST,
+        PRO_CFGM_TEST,
+}CLI_OPCODE_T;
+
+
+typedef enum {
+
+        /* Incoming commands to WDT */
+        CMD_WD_INCOMING_COMMANDS_START = WDT_CMD_BASE,
+        CMD_WD_REG_PROC,
+        CMD_WD_RES_KEEPALIVE,
+        CMD_WD_UNREG_PROC,
+        CMD_WD_REQ_EXPIRE_WATCHDOG,
+        CMD_WD_RES_SAVE_AND_CLOSE,
+        CMD_WD_REQ_BOOT_STATUS,
+        /* Add any new incoming commands above this line */
+        CMD_WD_INCOMING_COMMANDS_END,
+
+        /* WDT's responses or commands initiated by WDT */
+        CMD_WD_OUTGOING_COMMANDS_START,
+        CMD_WD_RES_REG_PROC,
+        CMD_WD_REQ_KEEPALIVE,
+        CMD_WD_RES_UNREG_PROC,
+        CMD_WD_RES_EXPIRE_WATCHDOG,
+        CMD_WD_SAVE_AND_CLOSE,
+        CMD_WD_REQ_WDT_STATUS,
+        CMD_WD_PROCESS_RECOVERED,
+        CMD_WD_RES_BOOT_STATUS,
+        /* Add any new outgoing commands above this line */
+        CMD_WD_OUTGOING_COMMANDS_END
+
+}WDT_API_E;
+
+
+#endif /*_WEB_API_HEADER_H*/

@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+#menuLeft {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-right: 1px solid #3C3C3C;
+    display: block;
+    float: left;
+    margin: 0 auto;
+    width: 200px;
+	height:auto;
+}
+#menuLeft ul {
+    -moz-box-shadow: 0 2px 8px #333333;
+    border: 0 none;
+    display: block;
+    list-style: none outside none;
+    margin: 0 auto 10px 0;
+    padding: 0;
+
+}
+#menuLeft ul li {
+    display: block;
+    margin: 5px 0 0;
+    min-width: 169px;
+    position: relative;
+}
+#menuLeft ul li ul { display:none;}
+#menuLeft ul li a {
+   background: -moz-linear-gradient(10% 90% 90deg, #6a6868, #888686);
+	background:	-webkit-gradient(linear, center bottom, center top, from(#6a6868), to(#888686));
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#888686', endColorstr='#6a6868');
+behavior: url(PIE.htc);
+    border-bottom: 1px solid #3C3C3C;
+    border-top: 1px solid #8F8D8D;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    height: 25px;
+    min-width: 168px;
+    outline: medium none;
+    padding-left: 0px;
+    padding-top: 5px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #000000;
+    width: 100%;
+}
+
+
+
+/*a {
+    text-align: center;
+}*/
+#menuLeft .menuLink {
+    background-color: transparent;
+    color: #EEEEEE;
+    cursor: pointer;
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 12px;
+    text-align: left;
+    text-shadow: 0 1px 1px #000000;
+	
+}
+#menuLeft ul li a span {
+    -moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius:5px;
+    -moz-box-shadow: -1px 1px 4px #3C3C3C;
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+    font-size: 8px;
+    height: 10px;
+    padding: 0 1px;
+    position: absolute;
+    right: 5px;
+    text-shadow: none;
+    top: 10px;
+	behavior: url(PIE.htc);
+}
+#menuLeft ul li ul {
+    overflow: hidden;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#menuLeft ul li ul li, #menuLeft ul li ul li.current {
+    padding: 5px 0 5px 5px;
+	margin:0 20px 0 10px;;
+}
+#menuLeft .current {
+    background: url("../img/current.png") repeat-x scroll 0 0 transparent;
+    color: #333333;
+    display: block;
+    font-size: 12px;
+    margin: 0;
+    overflow: hidden;
+    padding: 3px;
+    text-align: left;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+#menuLeft .divMenu ul li:hover {
+	background: url("../img/current.png") repeat-x scroll 0 0 transparent;
+	color: #333333;
+    display: block;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+#menuLeft .divMenu {
+	display:none;
+}
+#menuLeft .unselectable center {
+	color:#EEEEEE; font-weight:bold; margin:5px;
+}
+#menuLeft .downArrow { 
+	background-image:none;
+	width:14px !important;
+	top:8px !important;
+	right:3px !important;
+	height:14px !important;
+	position:absolute;
+}
+#menuLeft .upArrow { 
+	background-image:none;
+	width:14px !important;
+	top:8px !important;
+	right:3px !important;
+	height:14px !important;
+	position:absolute;
+}

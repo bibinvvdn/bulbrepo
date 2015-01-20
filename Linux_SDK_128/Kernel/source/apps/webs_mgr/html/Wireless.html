@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+	<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+<script src='js/common.js' type='text/javascript'></script>
+ <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	<script type="text/javascript">
+	var setValue=function()
+	{
+//	 document.getElementById('ap_ssid').value="WFPS";
+//	document.getElementById('ap_tx_pwr').value="18";
+//	document.getElementById('sta_ssid').value="NCS_AP";
+//	document.getElementById('sta_tx_pwr').value="18";
+//	document.getElementById('sta_sec').value="Open";
+//	document.getElementById('sta_wep_keyno').value="1";
+//	document.getElementById('sta_wep_secret').value="";
+//	document.getElementById('sta_wpa_secret').value="";
+//	document.getElementById('sta_wpa_enc').value="0-AES";
+	
+		
+	}
+	
+var setwireless=function()
+{
+//FindChannelNo();
+  names=Array(3);
+  values=Array(3);
+ /* names[0]="apssid";
+  values[0]=$('#ap_ssid').val();*/
+ /* names[1]="channelno";
+  values[1]= ChannelNo;*/
+  /*names[1]="transmitpower";
+  values[1]=$('#ap_tx_pwr').val();*/
+  names[0]="ssidconnect";
+  values[0]=$('#sta_ssid').val();
+
+/* names[3]="clienttranspow ";
+  values[3]=$('#sta_tx_pwr').val();*/
+    names[1]="clientsecurity";
+  values[1]=$('#sta_sec').val();
+ /* names[5]="WEPkey ";
+  values[5]=$('#sta_wep_keyno').val();
+  names[6]="WEPPassword";
+  values[6]=$('#sta_wep_secret').val();*/
+  names[2]="WPAPassphrase";
+  values[2]=$('#sta_wpa_secret').val();
+ /* names[8]="WPAEncryption";
+  values[8]=$('#sta_wpa_enc').val();*/
+  setWirelessSettings(names,values,showpage);
+ };
+ 
+ var showpage=function()
+ {
+  reload();
+ };
+ 
+ var reload=function()
+ {
+  window.location.reload();
+ };
+			
+</script>
+	<script type="text/javascript">	
+var getwireless=function()
+	{ 
+
+    var x=document.getElementById('sta_sec').value;
+    if(x=="open")
+		{
+	        
+			//document.getElementById("sta_wep_keyno").disabled=true;
+			//document.getElementById("sta_wep_secret").disabled=true;
+			document.getElementById("sta_wpa_secret").disabled=true;
+			//document.getElementById("sta_wpa_enc").disabled=true;
+		}
+		/*else if(x=="wep")
+		{
+				alert(x);
+		    $("#sta_wep_keyno").prop('disabled', false);
+			$("#sta_wep_secret").prop('disabled', false);
+			$("#sta_wpa_secret").prop("disabled", true);
+			$("#sta_wpa_enc").prop("disabled", true);
+		
+		}*/
+		else{
+			//alert(x);
+		//$("#sta_wep_keyno").prop("disabled", true);
+			//$("#sta_wep_secret").prop("disabled", true);
+			$("#sta_wpa_secret").prop("disabled", false);
+			//$("#sta_wpa_enc").prop("disabled", false);
+		}
+	
+	
+/*var select = document.getElementById('ap_tx_pwr');
+for(var i=0;i<=18;i++){
+select.add( new Option( i ) );
+}
+
+var select = document.getElementById('sta_tx_pwr');
+for(var i=0;i<=18;i++){
+select.add( new Option( i ) );
+} */
+		names=Array(1);
+		values=Array(1);
+		names[0]="wire";
+		values=getWirelessSettings(names,updatescreens);
+		//values[0]="0 00:0B:6B:7E:9E:2B 192.168.1.50 imx6qsabresd 20Sep2013 11:16:10 4 6 7 2 3 5 6";
+		//values[0]="Enabled Firmware U-boot Hardware";
+		updatescreens(values);
+		//alert(values);
+	};	
+	
+	
+    var updatescreens=function(values)
+	{
+		split_ap(values);		
+	};
+	
+   var ap="global";
+   var split_ap = function(values)
+	{
+	    var status = values;
+		status = " "+status;
+		var val = status.split(" ");
+		ap = [];
+		for (var i=1;i<val.length;i++)
+			{ 
+			ap[i]=[]
+			ap[i] = val[i];
+			}	
+			//document.getElementById("ap_ssid").value=ap[1];			
+		 	//document.getElementById("ap_chnl").value=ap[2];			
+			//document.getElementById("ap_tx_pwr").value=ap[3];			
+			
+			document.getElementById("sta_ssid").value=ap[1];			
+			//document.getElementById("sta_chnl").innerHTML=ap[5];			
+			//document.getElementById("sta_tx_pwr").value=ap[5];
+			document.getElementById("sta_sec").value=ap[2];			
+			//document.getElementById("sta_wep_keyno").value=ap[7];			
+			//document.getElementById("sta_wep_secret").value=ap[8];
+			document.getElementById("sta_wpa_sec").value=ap[3];
+			//document.getElementById("sta_wpa_enc").value=ap[10];			
+			
+			};	
+	/*
+var ChannelNo;
+var FindChannelNo = function () {
+	ChannelNo = "";
+for(var i=1; i <= 11; i++)
+	{
+		if($("#ap_chnl_"+i).prop('checked')) {
+		ChannelNo = ChannelNo+"1";
+		} else {
+		ChannelNo = ChannelNo+"0";
+		}
+	}
+
+};
+
+
+ function toggle(source) {
+        var aInputs = document.getElementsByTagName('input');
+        for (var i=0;i<aInputs.length;i++) {
+            if (aInputs[i] != source && aInputs[i].className == source.className) {
+                aInputs[i].checked = source.checked;
+            }
+        }
+    }*/
+	</script>
+
+	<script type="text/javascript">
+$(function() {
+    $('#sta_sec').on('change', function(event) {
+        var x=this.value;
+    if(x=="open")
+		{
+	//alert(x);
+		//	$("#sta_wep_keyno").prop('disabled', 'true');
+		//	$("#sta_wep_secret").prop('disabled', 'true');
+			$("#sta_wpa_secret").prop('disabled', 'true');
+		//	$("#sta_wpa_enc").prop('disabled', 'true');
+		}
+		/*else if(x=="wep")
+		{
+				//alert(x);
+		    $("#sta_wep_keyno").prop('disabled', false);
+			$("#sta_wep_secret").prop('disabled', false);
+			$("#sta_wpa_secret").prop("disabled", true);
+			$("#sta_wpa_enc").prop("disabled", true);
+		
+		}*/
+		else{
+			//alert(x);
+		//$("#sta_wep_keyno").prop("disabled", true);
+		//	$("#sta_wep_secret").prop("disabled", true);
+			$("#sta_wpa_secret").prop("disabled", false);
+		//	$("#sta_wpa_enc").prop("disabled", false);
+		}
+	});
+});
+	
+	</script>
+
+
+    </head>
+<body onLoad="javascript:getwireless();" style="background-color:#9BBDE6">  
+<div class="TitleofContent" style="margin-bottom:8px; margin-left:20px;">
+<b>Wireless Settings</b>
+</div>
+<div id="content" style="background-color:#E5E5E5; border:double; margin-left:10px; margin-right:15px;" >
+
+	
+	<table  id='wlan_cfg_t' style="font-family:Arial, Helvetica, sans-serif;font-size:14px;" cellpadding="5" cellspacing="3">
+ 
+<!--<tr><td colspan="2">
+<b>AP Mode:</b>
+</th></tr>
+	<tr>
+	<td width="250px;">Tag SSID</td>
+    <td><input type='text' id='ap_ssid' style="width:115px;" /></td>
+	</tr>
+
+	    <tr>
+     <td >Transmit Power (dBm)</td>
+     <td><select id="ap_tx_pwr" style="width:40px;">
+     </select></td>
+     
+   
+           </tr>-->
+</table>
+	
+  <hr class="stdHRGrp">
+    </tr>
+    <table style="font-family:Arial, Helvetica, sans-serif;font-size:14px;" cellpadding="5" cellspacing="3">
+    <tr><td colspan="2" >
+<b>CLIENT Mode:</b>
+</td></tr>
+    
+    <tr>
+	<td width="100"  NOWRAP>SSID to connect to</td>
+    <td><input type='text' id='sta_ssid' style="width:115px;" /></td>
+	</tr>
+	 	    <tr>
+     <td width="100" >Client Channel No.</td>
+     <td><input type="text" id="sta_chnl" style="width:115px;" value="Auto" readonly="true;"></input>
+    
+    </td>
+    </tr>
+	<!--<tr>
+     <td width="100" >Client Transmit Power (dBm)</td>
+     <td><select id="sta_tx_pwr" style="width:40px" >
+     
+        
+        </select></td></tr>-->
+        
+	<tr>
+     <td width="100" >Client Security Mode</td>
+    <td width="148"><select style="width:123px;padding:3px;font-size:12px;" id="sta_sec" >
+										<option  name="q" value="0" id="sec_open" > OPEN</option>
+										<!--<option  name="q" value="wep" id="sec_wep" > WEP</option>-->
+										<option  name="q" value="1" id="sec_wpa" > WPA/WPA2-PSK</option>
+										</select></td></tr>
+		
+			<!--<tr>
+     <td width="100" >Default WEP Key</td>
+      <td ><select id="sta_wep_keyno" style="width:40px;font-size:12px;">
+		<option  name="key" value="1" id="sta_wep_keyno_1" >1</option>
+		<option  name="key" value="2" id="sta_wep_keyno_2" >2</option>
+		<option  name="key" value="3" id="sta_wep_keyno_3" >3</option>
+        <option  name="key" value="4" id="sta_wep_keyno_4" >4</option>
+		</select></td></tr>
+        <table width="350" style="display:none;float:left;border:1px solid #C6F" id="cli_WEP" >
+        
+		  <tr>
+		<td width="150" NOWRAP>WEP Password</td>
+   	    <td ><input type='password' id='sta_wep_secret' style="width:115px;" maxlength="17"/></td>        
+		</tr>-->
+        <tr>
+		<td width="250" NOWRAP>WPA/WPA2 Passphrase</td>
+   	    <td><input type='password' id='sta_wpa_secret' style="width:115px;" maxlength="33" /></td>        
+		</tr>
+        <!--<tr>
+     <td width="250" >WPA/WPA2 Encyption</td>
+      <td><select id="sta_wpa_enc" style="width:70px;font-size:12px;" >
+		<option  name="enc" value="0-AES" id="sta_wpa_enc_0" >0-AES </option>
+		<option  name="enc" value="1-TKIP" id="sta_wpa_enc_1" >1-TKIP</option>
+        <option  name="enc" value="2-CCMP" id="sta_wpa_enc_2" >2-CCMP</option>
+		</select></td></tr>-->
+        
+        </table> </div>
+        <tr><td>&nbsp;</td></tr> 
+		<table style="margin-left:20px;">				
+				
+             <tr><td ><input type="button" id="apply" value="Reset" onClick="setValue()"/></td> 
+            <td>&nbsp;</td>   <td>&nbsp;</td>    <td>&nbsp;</td>
+                <td width="48"><input type="button" id="apply" value="Apply" onClick="setwireless()"/></td>
+				</tr>
+				</table>	
+		
+     	
+</body>
+</html>
+		
+	  
+		
+    
+	

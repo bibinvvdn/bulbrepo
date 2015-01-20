@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+<title>System Settings</title>
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+ <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="js/common.js" type="text/javascript"></script>
+<script>
+
+		function validate(key) {
+        //getting key code of pressed key
+        var keycode = (key.which) ? key.which : key.keyCode;
+       // var phn = document.getElementById('_txtPrice');
+        //comparing pressed keycodes
+        if (!(keycode == 8 || keycode == 46) && (keycode < 48 || keycode > 57)) {
+            return false;
+        }
+      
+    }
+
+</script>
+<script type="text/javascript">
+var getNetworks=function()
+	{ 
+/*	
+     var x =document.getElementById('dhcp').value;
+	// alert(x);
+    if(x=="1")
+		{
+	//alert(x);
+			$("#ip_addr").prop('disabled', true);
+			$("#netmask").prop('disabled', true);
+			$("#gateway").prop('disabled', true);
+			$("#dns_pri").prop('disabled', true);
+			$("#dns_sec").prop('disabled', true);
+		}
+		
+		else{
+			//alert(x);
+			$("#ip_addr").prop("disabled", false);
+			$("#netmask").prop("disabled", false);
+			$("#gateway").prop("disabled", false);
+			$("#dns_pri").prop("disabled", false);
+			$("#dns_sec").prop("disabled", false);
+		
+	};
+*/
+		names=Array(1);
+		values=Array(1);
+		names[0]="net";
+		values=getNetworkSettings(names,updatescreens);
+		//values[0]="0 00:0B:6B:7E:9E:2B 192.168.1.50 imx6qsabresd 20Sep2013 11:16:10 4 6 7 2 3 5 6";
+		//values[0]="Enabled Firmware U-boot Hardware";
+		updatescreens(values);
+	//	alert(values);
+	};	
+    var updatescreens=function(values)
+	{
+		split_ap(values);		
+	};
+	
+   var ap="global";
+   var split_ap = function(values)
+	{
+	    var status = values;
+		status = " "+status;
+		var val = status.split(" ");
+		ap = [];
+//		var chkvalue=0;
+		for (var i=1;i<val.length;i++)
+			{ 
+			
+			ap[i]=[]
+			ap[i] = val[i];
+			}	
+//			chkvalue=val[0];
+					
+		 	document.getElementById("ip_addr").value=ap[1];			
+			document.getElementById("netmask").value=ap[2];			
+			document.getElementById("gateway").value=ap[3];
+			document.getElementById("dns_pri").value=ap[4];			
+			document.getElementById("dns_sec").value=ap[5];		
+			
+			};	
+			/*if(chkvalue==1)
+			{
+			document.getElementById('dhcp').checked = true;
+			}
+else
+{
+document.getElementById('dhcp').checked = false;
+} */
+
+
+ </script>
+ <script type="text/javascript">
+ var setValue=function(){
+	// document.getElementById('dhcp').value="0";
+	document.getElementById('ip_addr').value="192.168.100.1";
+	document.getElementById('netmask').value="255.255.255.0";
+	document.getElementById('gateway').value="0.0.0.0";
+	document.getElementById('dns_pri').value="0.0.0.0";
+	document.getElementById('dns_sec').value="0.0.0.0";
+	
+	 
+	 }
+var setNetworks=function()
+{
+  names=Array(5);
+  values=Array(5);
+  /*names[0]="Dhcp";
+  values[0]=$('#dhcp').val();*/
+  names[0]="TagIP";
+  values[0]=$('#ip_addr').val();
+  names[1]="Netmask";
+  values[1]=$('#netmask').val();
+  names[2]="Gateway";
+  values[2]=$('#gateway').val();
+  names[3]="DNS1";
+  values[3]=$('#dns_pri').val();
+  names[4]="DNS2";
+  values[4]=$('#dns_sec').val();
+ 
+  setNetworkSettings(names,values,showpage);
+ };
+ 
+ var showpage=function()
+ {
+  reload();
+ };
+ 
+ var reload=function()
+ {
+  window.location.reload();
+ };
+ </script>
+ <script>
+/*$(function() {
+    $('#dhcp').on('change', function(event) {
+        var x=this.value;
+    if(x=="1")
+		{
+	//alert(x);
+			$("#ip_addr").prop('disabled', true);
+			$("#netmask").prop('disabled', true);
+			$("#gateway").prop('disabled', true);
+			$("#dns_pri").prop('disabled', true);
+			$("#dns_sec").prop('disabled', true);
+		}
+		
+		else{
+			//alert(x);
+		$("#ip_addr").prop("disabled", false);
+			$("#netmask").prop("disabled", false);
+			$("#gateway").prop("disabled", false);
+			$("#dns_pri").prop("disabled", false);
+			$("#dns_sec").prop("disabled", false);
+		}
+	});
+});*/
+	
+	</script>
+
+</head>
+
+<body onload="getNetworks();" style="background-color:#9BBDE6">
+<div class="TitleofContent" style="margin-bottom:8px; margin-left:20px;">
+<b>Network Settings</b>
+</div>
+<div id="content" style="background-color:#E5E5E5; border:double; margin-left:10px; margin-right:15px;" >
+				
+     <table id="nw_cfg_t" style="font-family:Arial, Helvetica, sans-serif;font-size:14px;" cellpadding="5" cellspacing="3">
+     <tbody>
+    <!--	<tr>
+     <td width="150"  style="margin-left:5px;">DHCP</td>
+    <td><select  id="dhcp" style="width:75px;">
+										
+										<option  name="sta_sec" value="0" id="dhcp_dis" >Disable</option>
+										<option  name="sta_sec" value="1" id="dhcp_ena">Enable</option>
+										
+-->
+   
+    <tr>
+     <td width="150" style="margin-left:5px;" >Tag IP Address:</td>
+     <td ><input type='text' id='ip_addr' style="width:95px;" value='192.168.1.1' onKeyPress="return validate(event)" maxlength="16" /></td>
+     </tr>
+
+     
+      <tr>
+     <td width="150" style="margin-left:5px;" >Subnet Mask:</td>
+    <td ><input type='text' id='netmask'  style="width:95px;" value='255.255.255.0' onKeyPress="return validate(event)" maxlength="16" /></td>
+     </tr>
+     
+      <tr>
+     <td width="150"  style="margin-left:5px;">Default Gateway: </td>
+     <td ><input type='text' id='gateway'  style="width:90px;" value='0.0.0.0' onKeyPress="return validate(event)" maxlength="16" /></td>
+     </tr>
+     
+      <tr>
+     <td width="150"  style="margin-left:5px;">Primary DNS:</td>
+     <td><input type='text' id='dns_pri'  style="width:95px;" value='0.0.0.0' onKeyPress="return validate(event)" maxlength="16"/></td>
+     </tr>
+     
+      <tr>
+     <td width="150"  style="margin-left:5px;" >Secondary DNS:</td>
+     <td><input type='text' id='dns_sec'  style="width:95px;" value='0.0.0.0' onKeyPress="return validate(event)" maxlength="16"/></td>
+     </tr> 
+     </tbody> 
+     </table>
+</div>
+      <table style="margin-left:20px;">
+          <tr> 
+     <td>&nbsp;</td></tr>
+			<td ><input type="button" id="apply" value="Reset" onClick="setValue()"/></td> 
+            <td>&nbsp;</td>   <td>&nbsp;</td>    <td>&nbsp;</td>
+				<td><input type="button" id="apply" value="Apply" onClick="setNetworks()"/></td></tr></table>
+</body>
+</html>
